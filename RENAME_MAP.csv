@@ -1,0 +1,69 @@
+Old Path,New Path,Category/Role,Referenced In Files
+assets/images/logo-badge.png,assets/images/logo-badge.png,Brand Emblem,404.html; about.html; collections.html; contact.html; index.html; product-detail.html; reels.html
+assets/images/hero-01.webp,assets/images/hero-01.webp,Hero Slide 1,index.html; js/products.js
+assets/images/hero-02.webp,assets/images/hero-02.webp,Hero Slide 2,index.html; js/products.js
+assets/images/hero-03.webp,assets/images/hero-03.webp,Hero Slide 3,index.html; js/products.js
+assets/images/hero-04.webp,assets/images/hero-04.webp,Hero Slide 4,index.html; js/products.js
+assets/images/hero-05.webp,assets/images/hero-05.webp,Hero Slide 5,index.html; js/products.js
+assets/images/hindu-bride-01.webp,assets/images/collection-01.webp,Ethnic Wear Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/christian-bride-01.webp,assets/images/collection-02.webp,Western Wear Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/engagement-01.webp,assets/images/collection-03.webp,Occasion Wear Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/white-gown-01.webp,assets/images/collection-04.webp,Festive Collection Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/pavithrappattu-01.webp,assets/images/collection-05.webp,Casual Wear Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/roja-01.webp,assets/images/collection-06.webp,New Arrivals Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/handwork-01.webp,assets/images/collection-07.webp,Artisanal Craft Category,404.html; about.html; collections.html; contact.html; index.html; js/products.js; product-detail.html; reels.html
+assets/images/legacy-01.webp,assets/images/collection-08.webp,Signature Series Category,404.html; about.html; collections.html; contact.html; index.html; product-detail.html; reels.html
+assets/images/hindu-bride-02.webp,assets/images/product-01.webp,Product 01,index.html; js/products.js
+assets/images/hindu-bride-03.webp,assets/images/product-02.webp,Product 02,index.html; js/products.js
+assets/images/hindu-bride-04.webp,assets/images/product-03.webp,Product 03,index.html; js/products.js
+assets/images/christian-bride-02.webp,assets/images/product-04.webp,Product 04,index.html; js/products.js
+assets/images/christian-bride-03.webp,assets/images/product-05.webp,Product 05,about.html; index.html; js/products.js
+assets/images/christian-bride-04.webp,assets/images/product-06.webp,Product 06,index.html; js/products.js
+assets/images/engagement-02.webp,assets/images/product-07.webp,Product 07,index.html; js/products.js
+assets/images/engagement-03.webp,assets/images/product-08.webp,Product 08,about.html; index.html; js/products.js
+assets/images/engagement-04.webp,assets/images/product-09.webp,Product 09,index.html; js/products.js
+assets/images/engagement-05.webp,assets/images/product-10.webp,Product 10,index.html; js/products.js
+assets/images/white-gown-02.webp,assets/images/product-11.webp,Product 11,index.html; js/products.js
+assets/images/white-gown-03.webp,assets/images/product-12.webp,Product 12,index.html; js/products.js
+assets/images/pavithrappattu-02.webp,assets/images/product-13.webp,Product 13,index.html; js/products.js
+assets/images/roja-02.webp,assets/images/product-14.webp,Product 14,about.html; index.html; js/products.js
+assets/images/handwork-02.webp,assets/images/product-15.webp,Product 15,about.html; index.html; js/products.js
+assets/images/handwork-03.webp,assets/images/product-16.webp,Product 16,about.html; index.html; js/products.js
+assets/images/legacy-02.webp,assets/images/product-17.webp,Product 17,js/products.js
+assets/images/best-seller-01.webp,assets/images/product-18.webp,Product 18,index.html; js/products.js
+assets/images/best-seller-02.webp,assets/images/product-19.webp,Product 19,index.html
+assets/images/best-seller-03.webp,assets/images/product-20.webp,Product 20,index.html
+assets/images/best-seller-04.webp,assets/images/product-21.webp,Product 21,index.html
+assets/images/best-seller-05.webp,assets/images/product-22.webp,Product 22,index.html
+assets/images/featured-01.webp,assets/images/product-23.webp,Product 23,index.html; js/products.js
+assets/images/featured-02.webp,assets/images/product-24.webp,Product 24,index.html; js/products.js
+assets/images/featured-03.webp,assets/images/product-25.webp,Product 25,index.html; js/products.js
+assets/images/featured-04.webp,assets/images/product-26.webp,Product 26,index.html
+assets/images/featured-05.webp,assets/images/product-27.webp,Product 27,index.html
+assets/images/new-arrival-01.webp,assets/images/product-28.webp,Product 28,index.html; js/products.js
+assets/images/new-arrival-02.webp,assets/images/product-29.webp,Product 29,index.html
+assets/images/new-arrival-03.webp,assets/images/product-30.webp,Product 30,index.html
+assets/images/new-arrival-04.webp,assets/images/product-31.webp,Product 31,index.html
+assets/images/new-arrival-05.webp,assets/images/product-32.webp,Product 32,index.html
+assets/images/new-launch-01.webp,assets/images/product-33.webp,Product 33,index.html
+assets/images/new-launch-02.webp,assets/images/product-34.webp,Product 34,index.html
+assets/images/mosaic-01.webp,assets/images/story-01.webp,Story Mosaic 1,about.html; index.html; js/products.js
+assets/images/mosaic-02.webp,assets/images/story-02.webp,Story Mosaic 2,about.html; index.html; js/products.js
+assets/images/mosaic-03.webp,assets/images/story-03.webp,Story Mosaic 3,about.html; js/products.js
+assets/images/mosaic-04.webp,assets/images/story-04.webp,Story Mosaic 4,about.html; js/products.js
+assets/images/instagram-01.webp,assets/images/social-01.webp,Social Feed 1,index.html; js/products.js
+assets/images/instagram-03.webp,assets/images/social-02.webp,Social Feed 2,index.html; js/products.js
+assets/images/reel-posters/reel-01.webp,assets/images/reel-poster-01.webp,Reel Poster 1,index.html; reels.html
+assets/images/reel-posters/reel-02.webp,assets/images/reel-poster-02.webp,Reel Poster 2,index.html; reels.html
+assets/images/reel-posters/reel-03.webp,assets/images/reel-poster-03.webp,Reel Poster 3,index.html; reels.html
+assets/images/reel-posters/reel-04.webp,assets/images/reel-poster-04.webp,Reel Poster 4,index.html; reels.html
+assets/images/reel-posters/reel-05.webp,assets/images/reel-poster-05.webp,Reel Poster 5,index.html; reels.html
+assets/images/reel-posters/reel-06.webp,assets/images/reel-poster-06.webp,Reel Poster 6,index.html; reels.html
+assets/images/reel-posters/reel-07.webp,assets/images/reel-poster-07.webp,Reel Poster 7,index.html; reels.html
+assets/reels/reel_1.mp4,assets/reels/reel-01.mp4,Reel Video 1,index.html; reels.html
+assets/reels/reel_2.mp4,assets/reels/reel-02.mp4,Reel Video 2,index.html; reels.html
+assets/reels/reel_3.mp4,assets/reels/reel-03.mp4,Reel Video 3,index.html; reels.html
+assets/reels/reel_4.mp4,assets/reels/reel-04.mp4,Reel Video 4,index.html; reels.html
+assets/reels/reel_5.mp4,assets/reels/reel-05.mp4,Reel Video 5,index.html; reels.html
+assets/reels/reel_6.mp4,assets/reels/reel-06.mp4,Reel Video 6,index.html; reels.html
+assets/reels/reel_7.mp4,assets/reels/reel-07.mp4,Reel Video 7,index.html; reels.html

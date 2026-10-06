@@ -1,0 +1,820 @@
+/**
+ * MAYOOKHA – The Bridal Studio — Master Product & Collection Catalog
+ * Celebrity Costume Designer · Aiswarya Baiju
+ * Cherthala, Kerala
+ *
+ * Categories:
+ * 1. sarees (Sarees)
+ * 2. bridal-sarees (Bridal Sarees)
+ * 3. lehengas (Lehengas)
+ * 4. bridal-blouses (Bridal Blouses)
+ * 5. custom-dresses (Custom Dresses)
+ * 6. ready-mades (Ready-mades)
+ * 7. kids-wear (Kids Wear)
+ * 8. gents-wear (Gents Wear)
+ */
+
+const CATEGORIES = [
+  { slug: 'all', name: 'All Collections', desc: 'Complete bespoke bridal couture, designer sarees & studio creations' },
+  { slug: 'sarees', name: 'Sarees', desc: 'Handcrafted Kerala Kasavu, organza, tussar, tissue & festive celebration sarees' },
+  { slug: 'bridal-sarees', name: 'Bridal Sarees', desc: 'Opulent pure Kanchipuram bridal silks, Muhurtham weaves & heirloom drapes' },
+  { slug: 'lehengas', name: 'Lehengas', desc: 'Handcrafted bridal lehengas, festive dhavani sets & traditional half-sarees' },
+  { slug: 'bridal-blouses', name: 'Bridal Blouses', desc: 'Intricate zardozi, hand aari work, cutwork detailing & signature designer blouses' },
+  { slug: 'custom-dresses', name: 'Custom Dresses', desc: 'Bespoke bridal gowns, reception silhouettes & made-to-measure evening couture' },
+  { slug: 'ready-mades', name: 'Ready-mades', desc: 'Contemporary designer kurtas, festive coordinates & elegant ready-to-wear' },
+  { slug: 'kids-wear', name: 'Kids Wear', desc: 'Traditional pattu pavadai sets, festive ethnic wear & custom kids dresses' },
+  { slug: 'gents-wear', name: 'Gents Wear', desc: 'Handloom Kasavu mundu sets, raw silk kurtas & tailored groomswear' }
+];
+
+const PRODUCTS = [
+  // ==========================================
+  // 1. SAREES (Weighted heavily)
+  // ==========================================
+  {
+    id: 'prod-01',
+    name: 'Charulata Kasavu Weave Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹8,500',
+    badge: 'Signature Kasavu',
+    images: [
+      'assets/images/product-01.webp',
+      'assets/images/collection-01.webp'
+    ],
+    description: 'Contemporary Kerala Kasavu handloom saree crafted in fine off-white tissue with vibrant neon green pleat accents and rich gold zari border. Paired with a tailored custom puffed sleeve blouse.',
+    fabric: 'Fine Kerala Handloom Cotton Silk & Pure Zari',
+    work: 'Traditional Kasavu Weave with Modern Color-Blocked Pleats',
+    details: [
+      'Authentic Kerala handloom certified weave with lustrous finish',
+      'Vibrant lime-green pleat detailing complementing traditional gold zari',
+      'Unstitched running blouse piece included (custom stitching available)',
+      'Celebrity designer consultation for blouse styling on request',
+      'Care: Dry clean only to preserve pure metallic zari sheen'
+    ]
+  },
+  {
+    id: 'prod-02',
+    name: 'Aadya Handloom Rust Silk Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹14,500',
+    badge: 'Boutique Exclusive',
+    images: [
+      'assets/images/product-02.webp',
+      'assets/images/collection-01.webp'
+    ],
+    description: 'Radiant rust orange pure handloom silk saree featuring delicate gold butta motifs and an intricately scalloped metallic zari border. Styled with a tailored sweet-heart neckline blouse.',
+    fabric: 'Pure Mulberry Raw Silk with Scalloped Zari Trim',
+    work: 'Handwoven Butta Motifs & Architectural Cutwork Border',
+    details: [
+      'Lustrous dual-tone rust orange and saffron sheen',
+      'Hand-finished scalloped border embroidered with fine metallic zari',
+      'Drapes with graceful fluidity, perfect for day and evening functions',
+      'Custom blouse designing with matching sleeve border included',
+      'Crafted by master weavers under Mayookha studio direction'
+    ]
+  },
+  {
+    id: 'prod-03',
+    name: 'Kalyani Black Temple Border Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹12,800',
+    badge: 'Heritage Drape',
+    images: [
+      'assets/images/product-03.webp',
+      'assets/images/product-33.webp'
+    ],
+    description: 'Striking jet-black handloom weave saree framed with auspicious crimson red temple borders and delicate antique gold zari korvai motifs. A tribute to timeless South Indian weaving artistry.',
+    fabric: 'Fine Cotton Silk with Crimson Handloom Temple Korvai',
+    work: 'Interlocked Temple Korvai Border & Geometric Zari Weave',
+    details: [
+      'Contrasting crimson red border woven with interlocked temple motifs',
+      'Breathable, lightweight drape ideal for festivities and ceremonial gatherings',
+      'Pair with Mayookha custom-tailored black or crimson silk blouse',
+      'Silk Mark certified quality guarantee',
+      'Ready to ship or made-to-measure styling consultation available'
+    ]
+  },
+  {
+    id: 'prod-04',
+    name: 'Veda Painted Tussar Organza Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹19,500',
+    badge: 'Atelier Statement',
+    images: [
+      'assets/images/product-04.webp',
+      'assets/images/collection-01.webp'
+    ],
+    description: 'Ivory tussar organza saree adorned with dramatic hand-painted floral art in bold charcoal black and burnt orange, completed with an opulent antique gold brocade border. As featured on the studio display.',
+    fabric: 'Pure Tussar Silk Organza & Antique Gold Zari Brocade',
+    work: 'Fine Hand-Painted Artistry with Woven Antique Zari Borders',
+    details: [
+      'Exclusive studio piece hand-painted by master artisans',
+      'Architectural floral motifs highlighted with delicate gold foil outlines',
+      'Paired with black silk blouse and antique temple jewellery styling',
+      'Preserved with protective muslin bag',
+      'Personalized draping and consultation at Cherthala studio'
+    ]
+  },
+  {
+    id: 'prod-05',
+    name: 'Souparnika Emerald Green Heritage Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹16,500',
+    badge: 'Best Seller',
+    images: [
+      'assets/images/product-05.webp',
+      'assets/images/collection-01.webp'
+    ],
+    description: 'Deep bottle green pure handloom saree patterned with floral gold buttas and rich woven zari pallu. Perfectly embodies the regal elegance of Kerala traditional celebrations.',
+    fabric: 'Pure Handloom Silk Cotton with High-Zari Border',
+    work: 'Floral Gold Zari Bootis & Traditional Hand-Woven Pallu',
+    details: [
+      'Auspicious deep emerald green hue for ceremonial functions',
+      'Dense zari pallu with traditional mango and paisley motifs',
+      'Comes with matching unstitched blouse material',
+      'Custom maggam or aari embroidery available for blouse tailoring',
+      'Dry clean recommended'
+    ]
+  },
+  {
+    id: 'prod-06',
+    name: 'Meera Pastel Lilac Organza Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹15,200',
+    badge: 'Pastel Edit',
+    images: [
+      'assets/images/product-06.webp',
+      'assets/images/product-04.webp'
+    ],
+    description: 'Ethereal pastel lilac organza saree featuring delicate hand-embroidered pearl scallops, resham floral bootis, and a subtle metallic silver-gold zari border. Designed for modern daytime weddings and engagements.',
+    fabric: 'Sheer Silk Organza with Pearl & Threadwork',
+    work: 'Hand-Embroidered Scallops, Muted Cutdana & Resham Work',
+    details: [
+      'Featherlight sheer drape with structured silhouette hold',
+      'Intricate scalloped borders hand-finished with pearl drops',
+      'Includes coordinating soft lilac crepe silk unstitched blouse piece',
+      'Custom sizing and designer fitting available',
+      'Handcrafted with meticulous attention in Cherthala'
+    ]
+  },
+  {
+    id: 'prod-07',
+    name: 'Anamika Dual-Tone Copper Silk Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹18,000',
+    badge: 'Festive Classic',
+    images: [
+      'assets/images/product-07.webp',
+      'assets/images/product-02.webp'
+    ],
+    description: 'Shimmering copper and mustard dual-tone handwoven silk saree with delicate floral vine zari borders and an elaborate ceremonial pallu. A timeless addition to any heirloom wardrobe.',
+    fabric: 'Dual-Tone Handwoven Mulberry Silk',
+    work: 'Floral Vine Zari Borders & Woven Geometric Pallu',
+    details: [
+      'Dynamic dual-tone weave that shifts elegantly under lighting',
+      'Rich woven pallu with traditional floral vines and peacock motifs',
+      'Paired with matching blouse piece',
+      'Styling support provided by Aiswarya Baiju',
+      'Dry clean only'
+    ]
+  },
+  {
+    id: 'prod-08',
+    name: 'Devika Antique Gold Tissue Saree',
+    category: 'sarees',
+    categoryName: 'Sarees',
+    price: '₹22,500',
+    badge: 'Tissue Edition',
+    images: [
+      'assets/images/product-08.webp',
+      'assets/images/collection-01.webp'
+    ],
+    description: 'Luminous antique gold tissue drape enriched with woven floral brocade borders and delicate resham highlight work. Brings a radiant glow to reception parties and festive banquets.',
+    fabric: 'Metallic Gold Tissue & Soft Silk Weave',
+    work: 'Woven Floral Brocade with Subtle Resham Highlights',
+    details: [
+      'Radiant antique metallic sheen without stiffness',
+      'Comfortable lightweight drape that holds crisp pleats all day',
+      'Styling recommendation: Pair with emerald green or maroon contrast blouse',
+      'Custom blouse tailoring available at Mayookha atelier',
+      'Certified authentic handloom craftsmanship'
+    ]
+  },
+
+  // ==========================================
+  // 2. BRIDAL SAREES
+  // ==========================================
+  {
+    id: 'prod-09',
+    name: 'Samvrutha Crimson Bridal Kanchipuram',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹58,000',
+    badge: 'Muhurtham Heirloom',
+    images: [
+      'assets/images/product-09.webp',
+      'assets/images/collection-02.webp'
+    ],
+    description: 'Heritage crimson bridal Kanchipuram silk saree with rich gold temple korvai zari and peacock motifs. Designed for the traditional South Indian bride seeking regal grandeur on her wedding day.',
+    fabric: 'Pure Mulberry Kanchipuram Silk & Pure Gold Zari',
+    work: 'Interlocked Korvai Weave with Peacock & Floral Brocade',
+    details: [
+      'Heavy-ply pure Kanchipuram silk with Silk Mark authentication',
+      'Authentic three-shuttle interlocked temple korvai border',
+      'Grand wedding pallu featuring sacred temple chariot and peacock motifs',
+      'Includes complimentary designer blouse sketch and consultation by Aiswarya Baiju',
+      'Special heirloom presentation packaging'
+    ]
+  },
+  {
+    id: 'prod-10',
+    name: 'Swarnamukhi Antique Gold Muhurtham Silk',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹64,500',
+    badge: 'Bridal Masterpiece',
+    images: [
+      'assets/images/product-10.webp',
+      'assets/images/collection-02.webp'
+    ],
+    description: 'Royal antique gold tissue Kanchipuram bridal saree with dense floral brocade all over the body, finished with a scarlet red border selvedge. Worn by distinguished brides for the sacred Muhurtham ceremony.',
+    fabric: 'Antique Gold Tissue Silk & Heavy Gold Zari Brocade',
+    work: 'All-Over Floral Jaal Brocade & Contrast Red Selvedge',
+    details: [
+      'Regal full-body antique gold brocade reflecting divine ceremonial majesty',
+      'Heavy woven pallu with traditional kalash and temple motifs',
+      'Pairs magnificently with antique temple jewellery and custom embroidered blouses',
+      'Dedicated one-on-one bridal styling at Cherthala flagship studio',
+      'Silk Mark certified with purity assurance'
+    ]
+  },
+  {
+    id: 'prod-11',
+    name: 'Aparna Royal Violet Kanchipuram Silk',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹46,000',
+    badge: 'Celebrity Pick',
+    images: [
+      'assets/images/product-11.webp',
+      'assets/images/collection-02.webp'
+    ],
+    description: 'Regal royal violet pure Kanchipuram silk saree with dense antique gold floral buttas and wide brocade borders. As worn by designer Aiswarya Baiju at the Mayookha studio showcase.',
+    fabric: 'Pure Kanchipuram Silk with Antique Gold Zari',
+    work: 'Traditional Handloom Floral Butta & Grand Brocade Border',
+    details: [
+      'Captivating jewel-tone royal violet shade exclusive to Mayookha Bridal Studio',
+      'Rich antique gold borders crafted with time-honoured handloom techniques',
+      'Includes matching unstitched blouse piece with matching border panels',
+      'Custom neckline and sleeve embroidery available on demand',
+      'Preserved with herbal anti-tarnish tissue'
+    ]
+  },
+  {
+    id: 'prod-12',
+    name: 'Mythili Scarlet Red Heirloom Bridal Drape',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹52,000',
+    badge: 'Bridal Classic',
+    images: [
+      'assets/images/product-12.webp',
+      'assets/images/product-09.webp'
+    ],
+    description: 'Timeless scarlet red pure bridal silk saree adorned with delicate coin buttas and an opulent gold zari pallu. A treasured heirloom crafted to be cherished across generations.',
+    fabric: '100% Pure Mulberry Silk & High-Density Zari',
+    work: 'Coin (Kasavu) Butta Jaal & Heavy Bridal Border',
+    details: [
+      'Classic bridal red favored for ceremonial South Indian weddings',
+      'Dense gold zari pallu with auspicious floral vines and swan motifs',
+      'Custom bridal blouse design tailored with zardozi and aari work',
+      'Comprehensive bridal trousseau consultation with Aiswarya Baiju',
+      'Dry clean only'
+    ]
+  },
+  {
+    id: 'prod-13',
+    name: 'Samyuktha Rani Pink Bridal Silk',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹48,500',
+    badge: 'Festive Bridal',
+    images: [
+      'assets/images/product-13.webp',
+      'assets/images/collection-02.webp'
+    ],
+    description: 'Vibrant rani fuchsia pink bridal silk saree with delicate micro-checks, gold zari border bands, and a lavish woven pallu. Designed for engagement, madhuramveppu, and reception ceremonies.',
+    fabric: 'Pure Mulberry Silk with Micro-Check Texture',
+    work: 'Intricate Gold Zari Stripes, Borders & Traditional Weave',
+    details: [
+      'Radiant rani pink tone bringing youthful vibrance to bridal functions',
+      'Tailored with matching brocade blouse and back-button detailing',
+      'Silk Mark certified handloom weaving',
+      'Bespoke fitting and bridal sleeve customizations available',
+      'Delivery timeframe: In stock or 2–3 weeks for custom tailored blouses'
+    ]
+  },
+  {
+    id: 'prod-14',
+    name: 'Vaishnavi Ivory & Gold Bridal Kasavu Drape',
+    category: 'bridal-sarees',
+    categoryName: 'Bridal Sarees',
+    price: '₹34,000',
+    badge: 'Kerala Bridal',
+    images: [
+      'assets/images/product-14.webp',
+      'assets/images/collection-02.webp'
+    ],
+    description: 'Grand Kerala bridal set saree crafted in pristine off-white handloom silk with wide high-karat gold Kasavu zari borders and temple motifs. The quintessential Kerala bridal ensemble.',
+    fabric: 'Pure Handloom Silk Kasavu & High-Karat Gold Zari',
+    work: 'Temple Korvai Border & Elaborate Kasavu Pallu',
+    details: [
+      'Authentic Kerala bridal tradition crafted by master handloom weavers',
+      'Pairs exquisitely with emerald green or crimson brocade blouses with puffed sleeves',
+      'Complimentary consultation on Kerala bridal jewellery coordination',
+      'Studio fittings available at Cherthala',
+      'Care: Professional dry clean only'
+    ]
+  },
+
+  // ==========================================
+  // 3. LEHENGAS
+  // ==========================================
+  {
+    id: 'prod-15',
+    name: 'Nila Ivory Chevron Zari Lehenga Set',
+    category: 'lehengas',
+    categoryName: 'Lehengas',
+    price: '₹36,000',
+    badge: 'Bridal Festive',
+    images: [
+      'assets/images/product-15.webp',
+      'assets/images/collection-03.webp'
+    ],
+    description: 'Exquisite ivory and gold lehenga set featuring a multi-panel flared skirt adorned with shimmering chevron gold zari work, paired with a matching embroidered choli and sheer dupatta.',
+    fabric: 'Pure Organza & Tissue Silk with Soft Cotton Silk Lining',
+    work: 'Chevron Gold Zari Weave & Hand-Finished Dupatta Edging',
+    details: [
+      'Voluminous multi-kalidar flare with built-in cancan support',
+      'Intricate chevron zari motifs creating graceful visual flow',
+      'Includes sheer organza dupatta with handloom gold border trims',
+      'Custom tailored to exact client measurements at Mayookha studio',
+      'Crafting timeframe: 3–4 weeks for made-to-measure orders'
+    ]
+  },
+  {
+    id: 'prod-16',
+    name: 'Haritha Emerald & Kasavu Dhavani Set',
+    category: 'lehengas',
+    categoryName: 'Lehengas',
+    price: '₹28,500',
+    badge: 'Heritage Dhavani',
+    images: [
+      'assets/images/product-16.webp',
+      'assets/images/collection-03.webp'
+    ],
+    description: 'Traditional Kerala dhavani (half-saree) featuring a pristine off-white pleated skirt with rich emerald-gold zari border, an emerald green embroidered blouse with puffed sleeves, and a matching dhavani.',
+    fabric: 'Handloom Kerala Kasavu & Pure Raw Silk Blouse',
+    work: 'Zardozi Micro-Buttas & Gold Zari Weave Border',
+    details: [
+      'Authentic Kerala half-saree silhouette with contemporary designer tailoring',
+      'Deep emerald green raw silk blouse with delicate all-over gold buttas',
+      'Includes custom pre-pleated dhavani drape for effortless elegance',
+      'Celebrity costume designer styling by Aiswarya Baiju',
+      'Available in custom skirt waist and choli measurements'
+    ]
+  },
+  {
+    id: 'prod-17',
+    name: 'Ragini Rani Pink Brocade Dhavani Ensemble',
+    category: 'lehengas',
+    categoryName: 'Lehengas',
+    price: '₹32,000',
+    badge: 'Studio Signature',
+    images: [
+      'assets/images/product-17.webp',
+      'assets/images/collection-03.webp'
+    ],
+    description: 'Vibrant rani pink pleated dhavani skirt paired with a high-neck gold floral brocade blouse featuring detailed back buttoning, and a draped rani pink chiffon dupatta with gold border.',
+    fabric: 'Pure Brocade Silk & Georgette Drape',
+    work: 'Brocade Floral Weaving & Fine Hand-Embroidered Edges',
+    details: [
+      'Stunning festive silhouette popular for betrothals and Onam celebrations',
+      'Elaborate blouse back design with fabric button row detailing',
+      'Hand-finished hemline with reinforced gold zari border',
+      'Tailored with premium breathable inner lining',
+      'Made-to-order in 2–3 weeks'
+    ]
+  },
+  {
+    id: 'prod-18',
+    name: 'Manjari Royal Indigo Festive Lehenga',
+    category: 'lehengas',
+    categoryName: 'Lehengas',
+    price: '₹38,000',
+    badge: 'Occasion Edit',
+    images: [
+      'assets/images/product-18.webp',
+      'assets/images/collection-03.webp'
+    ],
+    description: 'Deep royal indigo-purple flared lehenga skirt framed with wide antique gold temple borders, paired with a fitted boat-neck blouse and matching purple organza drape.',
+    fabric: 'Pure Chanderi Silk & Antique Gold Zari',
+    work: 'Temple Zari Border & Handcrafted Sequin Embroidered Bodice',
+    details: [
+      'Regal color combination of deep royal indigo and warm antique gold',
+      'Structured 16-kali flare with smooth movement for dances and receptions',
+      'Coordinating lightweight dupatta with zari fringe tassels',
+      'Custom neckline and sleeve length options available',
+      'Crafted with pride at Mayookha Bridal Studio'
+    ]
+  },
+
+  // ==========================================
+  // 4. BRIDAL BLOUSES
+  // ==========================================
+  {
+    id: 'prod-19',
+    name: 'Aiswarya Signature Zardozi Bridal Blouse',
+    category: 'bridal-blouses',
+    categoryName: 'Bridal Blouses',
+    price: '₹14,500',
+    badge: 'Designer Special',
+    images: [
+      'assets/images/product-19.webp',
+      'assets/images/collection-04.webp'
+    ],
+    description: 'Masterpiece rani pink bridal blouse featuring dense gold floral brocade on the back, delicate fabric-covered button rows, and custom zardozi embroidery along the elbow-length sleeve borders.',
+    fabric: 'Pure Raw Silk with Gold Brocade Back Panel',
+    work: 'Hand Zardozi, Bullion Knot Detailing & Fabric Buttoning',
+    details: [
+      'Celebrity costume designer Aiswarya Baiju signature cut and silhouette',
+      'Bespoke back design engineered for maximum elegance with draped sarees',
+      'High-comfort breathable cotton lining with reinforced padding',
+      'Exact measurement customization during studio appointment or online consultation',
+      'Crafting timeframe: 10–14 days'
+    ]
+  },
+  {
+    id: 'prod-20',
+    name: 'Padmapriya Temple Maggam Work Blouse',
+    category: 'bridal-blouses',
+    categoryName: 'Bridal Blouses',
+    price: '₹16,800',
+    badge: 'Artisanal Craft',
+    images: [
+      'assets/images/product-20.webp',
+      'assets/images/collection-04.webp'
+    ],
+    description: 'Grand bridal blouse in vermilion red silk adorned with heavy antique gold maggam work, featuring temple peacocks, kundan stones, genuine seed pearls, and intricate cutwork sleeve cuffs.',
+    fabric: 'Pure Raw Silk with Dense Maggam Handwork',
+    work: 'Temple Peacock Aari & Maggam Embroidery with Kundan & Pearls',
+    details: [
+      'Handcrafted on traditional adda frames by master embroidery artisans',
+      'Elaborate sleeve cuffs with scalloped cutwork and pearl drop latkans',
+      'Perfect match for Kanchipuram and heirloom bridal sarees',
+      'Pre-padded with premium contour cups and side zipper or back dori',
+      'Custom dye options available to match your specific saree palette'
+    ]
+  },
+  {
+    id: 'prod-21',
+    name: 'Vanathi Emerald Brocade Puff Blouse',
+    category: 'bridal-blouses',
+    categoryName: 'Bridal Blouses',
+    price: '₹9,800',
+    badge: 'Heritage Cut',
+    images: [
+      'assets/images/product-21.webp',
+      'assets/images/collection-04.webp'
+    ],
+    description: 'Traditional emerald green brocade blouse featuring vintage puffed sleeves with broad gold zari cuffs, sweet-heart neckline, and subtle zardozi highlight work along the borders.',
+    fabric: 'Pure Benarasi Silk Brocade & Antique Zari',
+    work: 'Tailored Vintage Puff Sleeves with Zari Border Cuffs',
+    details: [
+      'Beloved Kerala traditional style paired with Kasavu sarees and dhavanis',
+      'Structured puff sleeve silhouette that retains volume effortlessly',
+      'Tailored with soft inner lining for all-day ceremonial comfort',
+      'Available in emerald green, ruby red, royal blue, and black',
+      'Tailored to order in 7–10 days'
+    ]
+  },
+  {
+    id: 'prod-22',
+    name: 'Surabhi Golden Beige Cutwork Blouse',
+    category: 'bridal-blouses',
+    categoryName: 'Bridal Blouses',
+    price: '₹11,500',
+    badge: 'Bespoke Finish',
+    images: [
+      'assets/images/product-22.webp',
+      'assets/images/collection-04.webp'
+    ],
+    description: 'Sleek golden beige tissue silk blouse with a tailored back cutout, tie-up latkans, sleeveless cut, and delicate metallic cord embroidery along the neckline. Ideal for cocktail sarees and modern drapes.',
+    fabric: 'Metallic Tissue Silk & Crepe Lining',
+    work: 'Precision Cutwork, Back Cutout & Handcrafted Latkans',
+    details: [
+      'Contemporary backless cutout silhouette with sturdy tie-up dori',
+      'Universal neutral gold shade that complements a variety of silk sarees',
+      'Tailored with built-in bust cups and discreet side zipper closure',
+      'Customizable to sleeved or sleeveless styles upon request',
+      'Made-to-measure at Mayookha Cherthala studio'
+    ]
+  },
+
+  // ==========================================
+  // 5. CUSTOM DRESSES
+  // ==========================================
+  {
+    id: 'prod-23',
+    name: 'Seraphina Blush Pink Mermaid Bridal Gown',
+    category: 'custom-dresses',
+    categoryName: 'Custom Dresses',
+    price: '₹42,000',
+    badge: 'Reception Couture',
+    images: [
+      'assets/images/product-23.webp',
+      'assets/images/collection-05.webp'
+    ],
+    description: 'Custom bridal reception mermaid gown in soft powder blush pink, featuring sheer embellished full sleeves, delicate sequin branch embroidery across the bodice, and a flared tulle godet skirt.',
+    fabric: 'Fine French Tulle, Silk Crepe & Shimmer Net',
+    work: 'Hand-Embroidered Bugle Beads, Tonal Sequins & Mermaid Cut',
+    details: [
+      'Couture mermaid silhouette sculpting the figure before flaring into soft tulle',
+      'Illusion neckline with sheer embroidered sleeves providing refined coverage',
+      'Concealed back zipper with satin faux buttons for a clean luxury aesthetic',
+      'Bespoke fitting and bridal trials with Aiswarya Baiju',
+      'Crafted in 3–4 weeks for custom orders'
+    ]
+  },
+  {
+    id: 'prod-24',
+    name: 'Nocturne Off-Shoulder Couture Evening Dress',
+    category: 'custom-dresses',
+    categoryName: 'Custom Dresses',
+    price: '₹24,500',
+    badge: 'Celebrity Styling',
+    images: [
+      'assets/images/product-24.webp',
+      'assets/images/collection-05.webp'
+    ],
+    description: 'Dramatic black silk off-shoulder custom gown with architectural fold-over neckline, structured bodice, and a fluid flared A-line skirt. Designed for red-carpet gala appearances and cocktail evenings.',
+    fabric: 'Heavy Raw Silk & Silk Satin Finish',
+    work: 'Architectural Off-Shoulder Fold Neckline & Tailored Bodice',
+    details: [
+      'Sculpted portrait neckline highlighting the collarbones and statement jewellery',
+      'Inner boning structure for exceptional posture and contouring',
+      'Pair with antique temple jewellery or modern diamonds for versatile styling',
+      'Celebrity costume designer original cut',
+      'Custom dyed in black, wine red, emerald, or midnight blue'
+    ]
+  },
+  {
+    id: 'prod-25',
+    name: 'Evangeline Schiffli Embroidered Sundress',
+    category: 'custom-dresses',
+    categoryName: 'Custom Dresses',
+    price: '₹13,500',
+    badge: 'Artisanal Cotton',
+    images: [
+      'assets/images/product-25.webp',
+      'assets/images/collection-05.webp'
+    ],
+    description: 'Bespoke ivory cotton schiffli cutwork dress with delicate pastel floral embroidery motifs, V-neckline, and an inserted lace band along the flared skirt. Perfect for daytime celebrations and summer soirees.',
+    fabric: 'Pure Cotton Schiffli Cutwork & Cotton Voile Lining',
+    work: 'Floral Needlework Embroidery & Inserted Lace Trim',
+    details: [
+      'Breathable all-natural cotton ideal for tropical Kerala climates',
+      'Hand-embroidered floral sprays across the chest and waist',
+      'Discreet side pockets and invisible back zipper closure',
+      'Made-to-measure tailoring available in any length preference',
+      'Dry clean or gentle hand wash recommended'
+    ]
+  },
+  {
+    id: 'prod-26',
+    name: 'Celeste Champagne Chantilly Lace Gown',
+    category: 'custom-dresses',
+    categoryName: 'Custom Dresses',
+    price: '₹38,000',
+    badge: 'Bridal Western',
+    images: [
+      'assets/images/product-26.webp',
+      'assets/images/collection-05.webp'
+    ],
+    description: 'Bespoke Christian bridal gown in warm champagne Chantilly lace, featuring an illusion lace boat-neckline, gentle scalloped borders, and an ethereal flowing chapel train.',
+    fabric: 'Chantilly Lace & Satin Charmeuse Underlay',
+    work: 'Scalloped Lace Applique & Hand-Beaded Pearl Accents',
+    details: [
+      'Tailored specifically for Kerala Christian brides desiring bespoke western elegance',
+      'Includes custom cathedral or chapel veil styled to match the lace pattern',
+      'Personal fittings and alterations at our Cherthala boutique',
+      'Constructed with inner corset structure and satin button back',
+      'Estimated tailoring timeframe: 4 weeks'
+    ]
+  },
+
+  // ==========================================
+  // 6. READY-MADES
+  // ==========================================
+  {
+    id: 'prod-27',
+    name: 'Tara Hand-Embroidered Chanderi Kurta Set',
+    category: 'ready-mades',
+    categoryName: 'Ready-mades',
+    price: '₹7,800',
+    badge: 'Ready to Ship',
+    images: [
+      'assets/images/product-27.webp',
+      'assets/images/collection-06.webp'
+    ],
+    description: 'Ready-to-wear pastel sage Chanderi silk straight kurta adorned with delicate aari hand embroidery along the neckline and cuffs, paired with straight-cut pants and an organza dupatta.',
+    fabric: 'Chanderi Silk with Mulmul Cotton Lining',
+    work: 'Delicate Aari Threadwork & Metallic Gota Edging',
+    details: [
+      'Available in ready sizes XS to XXL with ease for quick alterations',
+      'Straight tailored silhouette offering relaxed festive sophistication',
+      'Includes matching tapered pants with elasticated back waist',
+      'Same-day dispatch available for in-stock studio pieces',
+      'Handcrafted under Mayookha quality standards'
+    ]
+  },
+  {
+    id: 'prod-28',
+    name: 'Gayatri Floral Organza Festive Coord Set',
+    category: 'ready-mades',
+    categoryName: 'Ready-mades',
+    price: '₹8,500',
+    badge: 'Trending Coord',
+    images: [
+      'assets/images/product-28.webp',
+      'assets/images/collection-06.webp'
+    ],
+    description: 'Chic 2-piece ready-to-wear festive coord set featuring an asymmetrical floral organza tunic with lace trims, paired with cigarette trousers in coordinating raw silk.',
+    fabric: 'Printed Organza & Raw Silk Trouser',
+    work: 'Digital Heritage Floral Print with Scalloped Lace Trims',
+    details: [
+      'Modern silhouette popular for festive parties, pujas, and family gatherings',
+      'Comfortable relaxed cut with clean tailoring',
+      'Available for immediate pickup at Cherthala or express courier delivery',
+      'Wash care: Gentle hand wash or dry clean',
+      'Size guide available via WhatsApp consultation'
+    ]
+  },
+  {
+    id: 'prod-29',
+    name: 'Rithanya Mulberry Silk Tunic & Stole',
+    category: 'ready-mades',
+    categoryName: 'Ready-mades',
+    price: '₹6,900',
+    badge: 'Festive Ready',
+    images: [
+      'assets/images/product-29.webp',
+      'assets/images/collection-06.webp'
+    ],
+    description: 'Jewel-toned maroon pure raw silk A-line tunic paired with a coordinating handloom stole with gold border accents. An effortless, refined outfit for everyday celebrations.',
+    fabric: 'Pure Mulberry Raw Silk & Handloom Stole',
+    work: 'Minimalist Metallic Stitching & Tassel Fringe Stole',
+    details: [
+      'Pure raw silk texture that feels luxurious and breathes comfortably',
+      'Side slits and functional pockets incorporated into tunic design',
+      'Versatile set ready to wear right off the rack',
+      'Studio alterations completed within 24 hours on request',
+      'Dry clean recommended'
+    ]
+  },
+
+  // ==========================================
+  // 7. KIDS WEAR
+  // ==========================================
+  {
+    id: 'prod-30',
+    name: 'Chinnu Heritage Kasavu Pattu Pavadai',
+    category: 'kids-wear',
+    categoryName: 'Kids Wear',
+    price: '₹4,800',
+    badge: 'Kids Festive',
+    images: [
+      'assets/images/product-30.webp',
+      'assets/images/collection-07.webp'
+    ],
+    description: 'Charming traditional Kerala Kasavu pattu pavadai set for young girls, featuring an off-white gold zari skirt paired with a peacock-green embroidered raw silk choli with puff sleeves.',
+    fabric: 'Traditional Kasavu Handloom & Soft Raw Silk Choli',
+    work: 'Hand-Embroidered Neckline & Gold Kasavu Zari Border',
+    details: [
+      'Lined with ultra-soft 100% cotton voile to ensure skin comfort for children',
+      'Adjustable skirt waistband with gentle drawstring and inner hooks',
+      'Available for ages 1 year to 12 years (custom age tailoring upon request)',
+      'Matching hair accessories and bow clips crafted upon request',
+      'Ideal for Vishu, Onam, baptism, and temple ceremonies'
+    ]
+  },
+  {
+    id: 'prod-31',
+    name: 'Nandhana Golden Yellow Silk Pavadai Set',
+    category: 'kids-wear',
+    categoryName: 'Kids Wear',
+    price: '₹5,600',
+    badge: 'Heirloom Kids',
+    images: [
+      'assets/images/product-31.webp',
+      'assets/images/collection-07.webp'
+    ],
+    description: 'Grand Kanchipuram silk pattu pavadai set in auspicious golden yellow and magenta pink, embellished with traditional peacock zari borders and a hand-detailed choli.',
+    fabric: 'Pure Kanchipuram Handloom Silk with Soft Lining',
+    work: 'Traditional Peacock Zari Border & Maggam Sleeve Accents',
+    details: [
+      'Pure silk fabric with non-scratchy protective baby-soft inner layer',
+      'Rich South Indian color contrast favored for ear-piercing and wedding occasions',
+      'Custom mother-daughter coordinating outfits designed on consultation',
+      'Available in stock or tailored to custom measurements in 7 days',
+      'Dry clean only'
+    ]
+  },
+
+  // ==========================================
+  // 8. GENTS WEAR
+  // ==========================================
+  {
+    id: 'prod-32',
+    name: 'Madhav Off-White Raw Silk Kurta Set',
+    category: 'gents-wear',
+    categoryName: 'Gents Wear',
+    price: '₹6,800',
+    badge: 'Groomswear',
+    images: [
+      'assets/images/product-32.webp',
+      'assets/images/collection-08.webp'
+    ],
+    description: 'Groom\'s off-white raw silk kurta featuring subtle gold butta weaving and a mandarin collar, paired with tailored silk churidar or Kerala handloom Kasavu mundu. Coordinates with bridal drapes.',
+    fabric: 'Pure Mulberry Raw Silk with Gold Butta Weave',
+    work: 'Mandarin Collar, Concealed Placket & Zari Detailing',
+    details: [
+      'Designed to coordinate seamlessly with bride\'s Kasavu or Kanchipuram saree',
+      'Breathable raw silk fabric tailored for comfortable ceremonial wear',
+      'Available with straight trouser, churidar, or matching Kasavu double mundu',
+      'Celebrity styling and custom groom fit consultation at Mayookha',
+      'Made-to-measure orders completed in 10–12 days'
+    ]
+  },
+  {
+    id: 'prod-33',
+    name: 'Aravind Black Shirt & Kasavu Mundu Set',
+    category: 'gents-wear',
+    categoryName: 'Gents Wear',
+    price: '₹5,400',
+    badge: 'Signature Pair',
+    images: [
+      'assets/images/product-33.webp',
+      'assets/images/collection-08.webp'
+    ],
+    description: 'Modern Kerala groom\'s celebration look featuring a tailored jet-black cotton-linen shirt paired with a pure handloom Kerala Kasavu double mundu featuring silver-black zari borders.',
+    fabric: 'Premium Cotton-Linen Shirt & Handloom Kasavu Mundu',
+    work: 'Tailored Slim Fit Shirt & Handwoven Silver-Black Border Mundu',
+    details: [
+      'As featured in Mayookha campaign photoshoots for stylish South Indian couples',
+      'Premium double-twist handloom mundu offering non-sheer, crisp pleating',
+      'Custom couple-twinning coordination tailored with bride\'s black temple saree',
+      'Ready sizes 38 to 46 with custom tailoring available',
+      'Dry clean or gentle hand wash for mundu'
+    ]
+  },
+  {
+    id: 'prod-34',
+    name: 'Keshav Golden Kasavu Wedding Mundu & Kurta',
+    category: 'gents-wear',
+    categoryName: 'Gents Wear',
+    price: '₹7,500',
+    badge: 'Wedding Classic',
+    images: [
+      'assets/images/product-34.webp',
+      'assets/images/collection-08.webp'
+    ],
+    description: 'Traditional Kerala wedding attire set comprising an opulent 3-inch pure gold Kasavu double mundu and matching kasavu melmundu, paired with a tailored cream tussar silk kurta.',
+    fabric: 'High-Karat Gold Kasavu Handloom & Pure Tussar Silk',
+    work: '3-Inch Gold Kasavu Zari Border & Tailored Kurta',
+    details: [
+      'The definitive ceremonial wedding attire for the Kerala groom',
+      'Woven by hereditary master weavers with certified gold zari',
+      'Includes matching folded melmundu / angavastram',
+      'Personal fitting and length alteration provided at Cherthala studio',
+      'Care: Gentle dry clean to preserve gold thread lustrous shine'
+    ]
+  }
+];
+
+// Helper to look up product by ID
+function getProductById(id) {
+  return PRODUCTS.find(p => p.id === id);
+}
+
+// Helper to filter products by category slug
+function getProductsByCategory(categorySlug) {
+  if (!categorySlug || categorySlug === 'all') return PRODUCTS;
+  return PRODUCTS.filter(p => p.category === categorySlug);
+}
