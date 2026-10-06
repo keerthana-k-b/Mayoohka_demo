@@ -1,11 +1,10 @@
 {
   "brand": "MAYOOKHA – The Bridal Studio",
   "folder": "Mayoohka_demo",
-  "logo": "assets/images/logo-badge.png",
+  "logo": "assets/images/logo.png",
   "fields": {
     "MAP_URL": "https://maps.google.com/?q=JohnThomas+Memorial+Building,+Manorama+Junction,+Cherthala,+Kerala+688524",
     "ADDRESS": "JohnThomas Memorial Building, Manorama Junction, Cherthala, Kerala 688524",
-    "EMAIL": "contact@mayookha.com",
     "INSTAGRAM_URL": "https://www.instagram.com/mayoohka_by_aiswarya_/",
     "INSTAGRAM_HANDLE": "@mayoohka_by_aiswarya_",
     "PHONE_DISPLAY": "+91 8089101784",

@@ -16,7 +16,9 @@ root_files = [
     'reels.html',
     'product-detail.html',
     '404.html',
-    'client.json'
+    'client.json',
+    'favicon.ico',
+    'favicon.png'
 ]
 
 for rf in root_files:

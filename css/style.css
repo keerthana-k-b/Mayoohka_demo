@@ -233,6 +233,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.85);
 }
 
+
+
 .brand-text-wrap {
   display: flex;
   flex-direction: column;
@@ -682,9 +684,22 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
   }
 
+  .brand-logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 44px;
+  }
+
+  .brand-text-wrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+  }
+
   .brand-main-text {
-    font-size: clamp(1rem, 3.8vw, 1.3rem);
-    letter-spacing: 1px;
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    letter-spacing: 1.5px;
     line-height: 1;
     white-space: nowrap;
     overflow: hidden;
@@ -692,7 +707,34 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .brand-sub-text {
-    display: none;
+    font-family: var(--font-sans);
+    font-size: 0.52rem;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* On mobile <=480px, keep logo and show only MAYOOKHA if space is tight */
+  @media (max-width: 480px) {
+    .brand-link {
+      gap: 7px;
+      max-width: calc(100% - 110px);
+    }
+    .brand-logo-img {
+      height: 38px;
+    }
+    .brand-sub-text {
+      display: none !important;
+    }
+    .brand-main-text {
+      font-size: 1.1rem;
+      letter-spacing: 1.2px;
+    }
   }
 
   .main-nav {
@@ -1306,7 +1348,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   color: var(--gold-light);
   margin-bottom: 30px;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.95);
+  display: inline-block;
+  padding: 8px 24px;
+  background: linear-gradient(90deg, rgba(12, 38, 37, 0) 0%, rgba(12, 38, 37, 0.78) 18%, rgba(12, 38, 37, 0.78) 82%, rgba(12, 38, 37, 0) 100%);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
 }
 
 .hero-actions {
@@ -3874,6 +3921,96 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(4px);
 }
 
+/* Footer Social Icons & Links (strictly sized at 20-24px) */
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--accent-gold);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.footer-social-icon:hover {
+  background: var(--accent-gold);
+  color: var(--primary-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  fill: currentColor !important;
+  stroke: none;
+  display: block;
+}
+
+/* Footer Collections List fallback classes */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-links a {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.72);
+  transition: all var(--transition-fast);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+  transform: translateX(4px);
+}
+
+/* Brand Logo Image in Header and Footer */
+.brand-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 48px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: transform var(--transition-smooth);
+}
+
+.site-header.scrolled .brand-logo-img {
+  height: 38px;
+  transform: scale(0.95);
+}
+
+.footer-logo-img {
+  height: 54px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 14px;
+}
+
 /* Newsletter Form */
 .newsletter-form {
   display: flex;
@@ -4261,7 +4398,11 @@ h1, h2, h3, h4, h5, h6 {
   .hero-subtitle {
     font-size: clamp(0.95rem, 3.4vw, 1.12rem) !important;
     margin-bottom: 18px !important;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+    padding: 6px 16px !important;
+    background: linear-gradient(90deg, rgba(12, 38, 37, 0) 0%, rgba(12, 38, 37, 0.85) 15%, rgba(12, 38, 37, 0.85) 85%, rgba(12, 38, 37, 0) 100%) !important;
+    border-radius: 6px !important;
+    backdrop-filter: blur(4px) !important;
   }
 
   .hero-actions {
@@ -4641,6 +4782,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100% !important;
     min-height: 48px !important;
     box-sizing: border-box !important;
+    font-size: 16px !important; /* Prevents iOS auto-zoom */
   }
 
   .newsletter-btn {
@@ -4649,12 +4791,28 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box !important;
   }
 
-  .social-icon-link {
+  /* Form inputs 16px minimum on mobile to prevent iOS Safari auto-zoom */
+  input, select, textarea,
+  .form-input, .form-select, .form-textarea,
+  .search-input {
+    font-size: 16px !important;
+  }
+
+  /* Minimum 44x44px tap targets for footer social icons */
+  .social-icon-link,
+  .footer-social-icon {
     width: 44px !important;
     height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
+  }
+
+  /* Footer Bottom padding so floating WhatsApp never covers text or links */
+  .footer-bottom {
+    padding-bottom: 84px !important;
   }
 
   /* 13. Floating WhatsApp: 52px, 16px + safe area */
@@ -4662,6 +4820,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
     right: calc(16px + env(safe-area-inset-right, 0px)) !important;
     z-index: 990 !important;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
   }
 
   .wa-floating-btn {

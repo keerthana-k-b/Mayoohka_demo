@@ -233,6 +233,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.85);
 }
 
+.brand-link .brand-text-wrap {
+  display: none !important;
+}
+
 .brand-text-wrap {
   display: flex;
   flex-direction: column;
@@ -1306,7 +1310,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   color: var(--gold-light);
   margin-bottom: 30px;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.95);
+  display: inline-block;
+  padding: 8px 24px;
+  background: linear-gradient(90deg, rgba(12, 38, 37, 0) 0%, rgba(12, 38, 37, 0.78) 18%, rgba(12, 38, 37, 0.78) 82%, rgba(12, 38, 37, 0) 100%);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
 }
 
 .hero-actions {
@@ -3874,6 +3883,95 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(4px);
 }
 
+/* Footer Social Icons & Links (strictly sized at 20-24px) */
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--accent-gold);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.footer-social-icon:hover {
+  background: var(--accent-gold);
+  color: var(--primary-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  fill: currentColor !important;
+  stroke: none;
+  display: block;
+}
+
+/* Footer Collections List fallback classes */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-links a {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.72);
+  transition: all var(--transition-fast);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+  transform: translateX(4px);
+}
+
+/* Brand Logo Image in Header and Footer */
+.brand-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-smooth);
+}
+
+.site-header.scrolled .brand-logo-img {
+  height: 40px;
+  transform: scale(0.95);
+}
+
+.footer-logo-img {
+  height: 54px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 14px;
+}
+
 /* Newsletter Form */
 .newsletter-form {
   display: flex;
@@ -4261,7 +4359,11 @@ h1, h2, h3, h4, h5, h6 {
   .hero-subtitle {
     font-size: clamp(0.95rem, 3.4vw, 1.12rem) !important;
     margin-bottom: 18px !important;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+    padding: 6px 16px !important;
+    background: linear-gradient(90deg, rgba(12, 38, 37, 0) 0%, rgba(12, 38, 37, 0.85) 15%, rgba(12, 38, 37, 0.85) 85%, rgba(12, 38, 37, 0) 100%) !important;
+    border-radius: 6px !important;
+    backdrop-filter: blur(4px) !important;
   }
 
   .hero-actions {

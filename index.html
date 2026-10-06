@@ -16,14 +16,16 @@
   <!-- Google Fonts: Cormorant Garamond & Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo-badge.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-badge.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo-badge.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
   <meta name="theme-color" content="#0F3B3A">
 
+  <link rel="preload" as="image" href="assets/images/hero-01.webp" type="image/webp" fetchpriority="high">
   <!-- Master Stylesheet with cache buster -->
   <link rel="stylesheet" href="css/style.css?v=7.0">
 </head>
@@ -44,10 +46,10 @@
 
       <!-- Brand Logo & Name (Left on desktop, centered on mobile) -->
       <a href="index.html" class="brand-link" aria-label="MAYOOKHA - Home">
-        <img src="assets/images/logo-badge.png" alt="MAYOOKHA Emblem" class="brand-badge-img" width="50" height="50">
+        <img src="assets/images/logo-header.png" alt="MAYOOKHA – The Bridal Studio" class="brand-logo-img" width="46" height="44" decoding="async">
         <div class="brand-text-wrap">
           <span class="brand-main-text">MAYOOKHA</span>
-          <span class="brand-sub-text">The Bridal Studio</span>
+          <span class="brand-sub-text">THE BRIDAL STUDIO</span>
         </div>
       </a>
 
@@ -65,7 +67,7 @@
           <div class="dropdown-menu" role="menu">
                         <div class="dropdown-grid">
               <a href="collections.html?c=sarees" class="dropdown-card">
-                <img src="assets/images/collection-01.webp" alt="Sarees" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-01.webp" alt="Sarees" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Sarees</div>
                   <div class="dropdown-desc">Kasavu, tissue, organza &amp; celebration drapes</div>
@@ -73,7 +75,7 @@
               </a>
 
               <a href="collections.html?c=bridal-sarees" class="dropdown-card">
-                <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Bridal Sarees</div>
                   <div class="dropdown-desc">Pure Kanchipuram silks &amp; Muhurtham weaves</div>
@@ -81,7 +83,7 @@
               </a>
 
               <a href="collections.html?c=lehengas" class="dropdown-card">
-                <img src="assets/images/collection-03.webp" alt="Lehengas" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-03.webp" alt="Lehengas" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Lehengas</div>
                   <div class="dropdown-desc">Bridal lehengas, dhavani sets &amp; half-sarees</div>
@@ -89,7 +91,7 @@
               </a>
 
               <a href="collections.html?c=bridal-blouses" class="dropdown-card">
-                <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Bridal Blouses</div>
                   <div class="dropdown-desc">Zardozi, aari, maggam &amp; designer back work</div>
@@ -97,7 +99,7 @@
               </a>
 
               <a href="collections.html?c=custom-dresses" class="dropdown-card">
-                <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Custom Dresses</div>
                   <div class="dropdown-desc">Bespoke bridal gowns &amp; evening couture</div>
@@ -105,7 +107,7 @@
               </a>
 
               <a href="collections.html?c=ready-mades" class="dropdown-card">
-                <img src="assets/images/collection-06.webp" alt="Ready-mades" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-06.webp" alt="Ready-mades" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Ready-mades</div>
                   <div class="dropdown-desc">Designer kurtas &amp; festive coordinates</div>
@@ -113,15 +115,15 @@
               </a>
 
               <a href="collections.html?c=kids-wear" class="dropdown-card">
-                <img src="assets/images/collection-07.webp" alt="Kids Wear" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-07.webp" alt="Kids Wear" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Kids Wear</div>
-                  <div class="dropdown-desc">Pattu pavadai &amp; custom kids ethnic wear</div>
+                  <div class="dropdown-desc">Pattu pavada &amp; bespoke kids wear</div>
                 </div>
               </a>
 
               <a href="collections.html?c=gents-wear" class="dropdown-card">
-                <img src="assets/images/collection-08.webp" alt="Gents Wear" class="dropdown-thumb" width="64" height="64" loading="lazy">
+                <img src="assets/images/collection-08.webp" alt="Gents Wear" class="dropdown-thumb" width="64" height="64" loading="lazy" decoding="async">
                 <div class="dropdown-card-text">
                   <div class="dropdown-title">Gents Wear</div>
                   <div class="dropdown-desc">Kasavu mundu sets, silk kurtas &amp; groomswear</div>
@@ -190,7 +192,7 @@
     <div class="drawer-header">
       <div class="brand-text-wrap">
           <span class="brand-main-text">MAYOOKHA</span>
-          <span class="brand-sub-text">The Bridal Studio</span>
+          <span class="brand-sub-text">THE BRIDAL STUDIO</span>
         </div>
       <button class="drawer-close-btn" aria-label="Close Mobile Menu">&times;</button>
     </div>
@@ -208,35 +210,35 @@
         </button>
                 <div class="drawer-accordion-content">
           <a href="collections.html?c=sarees" class="drawer-sublink-card">
-            <img src="assets/images/collection-01.webp" alt="Sarees" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-01.webp" alt="Sarees" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Sarees</span>
           </a>
           <a href="collections.html?c=bridal-sarees" class="drawer-sublink-card">
-            <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Bridal Sarees</span>
           </a>
           <a href="collections.html?c=lehengas" class="drawer-sublink-card">
-            <img src="assets/images/collection-03.webp" alt="Lehengas" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-03.webp" alt="Lehengas" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Lehengas</span>
           </a>
           <a href="collections.html?c=bridal-blouses" class="drawer-sublink-card">
-            <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Bridal Blouses</span>
           </a>
           <a href="collections.html?c=custom-dresses" class="drawer-sublink-card">
-            <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Custom Dresses</span>
           </a>
           <a href="collections.html?c=ready-mades" class="drawer-sublink-card">
-            <img src="assets/images/collection-06.webp" alt="Ready-mades" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-06.webp" alt="Ready-mades" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Ready-mades</span>
           </a>
           <a href="collections.html?c=kids-wear" class="drawer-sublink-card">
-            <img src="assets/images/collection-07.webp" alt="Kids Wear" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-07.webp" alt="Kids Wear" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Kids Wear</span>
           </a>
           <a href="collections.html?c=gents-wear" class="drawer-sublink-card">
-            <img src="assets/images/collection-08.webp" alt="Gents Wear" class="drawer-sublink-thumb" width="40" height="40" loading="lazy">
+            <img src="assets/images/collection-08.webp" alt="Gents Wear" class="drawer-sublink-thumb" width="40" height="40" loading="lazy" decoding="async">
             <span class="drawer-sublink-name">Gents Wear</span>
           </a>
           <a href="collections.html" class="drawer-sublink-all">
@@ -311,19 +313,19 @@
             <!-- Desktop: 5 Slanted Parallelogram Panels -->
             <div class="hero-slanted-track">
               <div class="hero-panel" title="Contemporary Look 1">
-                <img src="assets/images/hero-01.webp" alt="Contemporary Collection Look 1" width="360" height="570" loading="eager">
+                <img src="assets/images/hero-01.webp" alt="Signature Celebrity Bridal Kasavu Saree Edit" width="360" height="570" loading="eager" fetchpriority="high" decoding="async">
               </div>
               <div class="hero-panel" title="Contemporary Look 2">
-                <img src="assets/images/hero-02.webp" alt="Contemporary Collection Look 2" width="360" height="570" loading="eager">
+                <img src="assets/images/hero-02.webp" alt="Bridal Couture Look 2" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Contemporary Look 3">
-                <img src="assets/images/hero-03.webp" alt="Contemporary Collection Look 3" width="360" height="570" loading="eager">
+                <img src="assets/images/hero-03.webp" alt="Bridal Couture Look 3" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Contemporary Look 4">
-                <img src="assets/images/hero-04.webp" alt="Contemporary Collection Look 4" width="360" height="570" loading="eager">
+                <img src="assets/images/hero-04.webp" alt="Bridal Couture Look 4" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Contemporary Look 5">
-                <img src="assets/images/hero-05.webp" alt="Contemporary Collection Look 5" width="360" height="570" loading="eager">
+                <img src="assets/images/hero-05.webp" alt="Bridal Couture Look 5" width="360" height="570" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -332,19 +334,19 @@
           <div class="hero-slide" data-slide="1">
             <div class="hero-slanted-track">
               <div class="hero-panel" title="Handwoven Silk Drape">
-                <img src="assets/images/collection-01.webp" alt="Handwoven Silk Drape" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-01.webp" alt="Handwoven Silk Drape" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Tailored Evening Gown">
-                <img src="assets/images/collection-02.webp" alt="Tailored Evening Gown" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-02.webp" alt="Tailored Evening Gown" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Flared Statement Ensemble">
-                <img src="assets/images/collection-03.webp" alt="Flared Statement Ensemble" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-03.webp" alt="Flared Statement Ensemble" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Bespoke Evening Gown">
-                <img src="assets/images/collection-04.webp" alt="Bespoke Evening Gown" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-04.webp" alt="Bespoke Evening Gown" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Artisanal Silk Drape">
-                <img src="assets/images/collection-05.webp" alt="Artisanal Silk Drape" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-05.webp" alt="Artisanal Silk Drape" width="360" height="570" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -353,19 +355,19 @@
           <div class="hero-slide" data-slide="2">
             <div class="hero-slanted-track">
               <div class="hero-panel" title="Crimson Silk Drape">
-                <img src="assets/images/collection-06.webp" alt="Crimson Silk Drape" width="360" height="570" loading="lazy">
+                <img src="assets/images/collection-06.webp" alt="Crimson Silk Drape" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Featured Studio Ensemble">
-                <img src="assets/images/product-24.webp" alt="Featured Studio Ensemble" width="360" height="570" loading="lazy">
+                <img src="assets/images/product-24.webp" alt="Featured Studio Ensemble" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Best Seller Studio Look">
-                <img src="assets/images/product-18.webp" alt="Best Seller Studio Look" width="360" height="570" loading="lazy">
+                <img src="assets/images/product-18.webp" alt="Best Seller Studio Look" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="Featured Studio Ensemble">
-                <img src="assets/images/product-23.webp" alt="Featured Studio Ensemble" width="360" height="570" loading="lazy">
+                <img src="assets/images/product-23.webp" alt="Featured Studio Ensemble" width="360" height="570" loading="lazy" decoding="async">
               </div>
               <div class="hero-panel" title="New Arrival Studio Edit">
-                <img src="assets/images/product-28.webp" alt="New Arrival Studio Edit" width="360" height="570" loading="lazy">
+                <img src="assets/images/product-28.webp" alt="New Arrival Studio Edit" width="360" height="570" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -375,19 +377,19 @@
         <!-- Mobile: Single Swipeable Image (< 768px) -->
         <div class="hero-mobile-slider" aria-hidden="true">
           <div class="hero-mobile-slide active">
-            <img src="assets/images/hero-01.webp" alt="MAYOOKHA Bridal Studio Elegance" width="768" height="480">
+            <img src="assets/images/hero-01.webp" alt="MAYOOKHA Bridal Studio Elegance" width="768" height="480" fetchpriority="high" loading="eager" decoding="async">
           </div>
           <div class="hero-mobile-slide">
-            <img src="assets/images/hero-02.webp" alt="MAYOOKHA Handcrafted Detail" width="768" height="480">
+            <img src="assets/images/hero-02.webp" alt="MAYOOKHA Handcrafted Detail" width="768" height="480" decoding="async">
           </div>
           <div class="hero-mobile-slide">
-            <img src="assets/images/hero-03.webp" alt="MAYOOKHA Curated Bridal Silks" width="768" height="480">
+            <img src="assets/images/hero-03.webp" alt="MAYOOKHA Curated Bridal Silks" width="768" height="480" decoding="async">
           </div>
           <div class="hero-mobile-slide">
-            <img src="assets/images/hero-04.webp" alt="MAYOOKHA Bespoke Silhouettes" width="768" height="480">
+            <img src="assets/images/hero-04.webp" alt="MAYOOKHA Bespoke Silhouettes" width="768" height="480" decoding="async">
           </div>
           <div class="hero-mobile-slide">
-            <img src="assets/images/hero-05.webp" alt="MAYOOKHA Occasion & Wedding Wear" width="768" height="480">
+            <img src="assets/images/hero-05.webp" alt="MAYOOKHA Occasion & Wedding Wear" width="768" height="480" decoding="async">
           </div>
         </div>
 
@@ -448,8 +450,8 @@
           <!-- Card 1: Sarees -->
           <a href="collections.html?c=sarees" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-01.webp" alt="Sarees" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-01-hover.webp" alt="Sarees Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-01.webp" alt="Sarees" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-01-hover.webp" alt="Sarees Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Sarees</h3>
@@ -461,8 +463,8 @@
           <!-- Card 2: Bridal Sarees -->
           <a href="collections.html?c=bridal-sarees" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-02-hover.webp" alt="Bridal Sarees Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-02.webp" alt="Bridal Sarees" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-02-hover.webp" alt="Bridal Sarees Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Bridal Sarees</h3>
@@ -474,8 +476,8 @@
           <!-- Card 3: Lehengas -->
           <a href="collections.html?c=lehengas" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-03.webp" alt="Lehengas" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-03-hover.webp" alt="Lehengas Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-03.webp" alt="Lehengas" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-03-hover.webp" alt="Lehengas Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Lehengas</h3>
@@ -487,8 +489,8 @@
           <!-- Card 4: Bridal Blouses -->
           <a href="collections.html?c=bridal-blouses" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-04-hover.webp" alt="Bridal Blouses Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-04.webp" alt="Bridal Blouses" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-04-hover.webp" alt="Bridal Blouses Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Bridal Blouses</h3>
@@ -500,8 +502,8 @@
           <!-- Card 5: Custom Dresses -->
           <a href="collections.html?c=custom-dresses" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-05-hover.webp" alt="Custom Dresses Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-05.webp" alt="Custom Dresses" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-05-hover.webp" alt="Custom Dresses Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Custom Dresses</h3>
@@ -513,8 +515,8 @@
           <!-- Card 6: Ready-mades -->
           <a href="collections.html?c=ready-mades" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-06.webp" alt="Ready-mades" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-06-hover.webp" alt="Ready-mades Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-06.webp" alt="Ready-mades" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-06-hover.webp" alt="Ready-mades Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Ready-mades</h3>
@@ -526,8 +528,8 @@
           <!-- Card 7: Kids Wear -->
           <a href="collections.html?c=kids-wear" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-07.webp" alt="Kids Wear" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-07-hover.webp" alt="Kids Wear Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-07.webp" alt="Kids Wear" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-07-hover.webp" alt="Kids Wear Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Kids Wear</h3>
@@ -539,8 +541,8 @@
           <!-- Card 8: Gents Wear -->
           <a href="collections.html?c=gents-wear" class="collection-card reveal-on-scroll">
             <div class="collection-card-img-wrap">
-              <img src="assets/images/collection-08.webp" alt="Gents Wear" class="collection-card-img primary-img" width="300" height="420" loading="lazy">
-              <img src="assets/images/collection-08-hover.webp" alt="Gents Wear Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy">
+              <img src="assets/images/collection-08.webp" alt="Gents Wear" class="collection-card-img primary-img" width="300" height="420" loading="lazy" decoding="async">
+              <img src="assets/images/collection-08-hover.webp" alt="Gents Wear Detail" class="collection-card-img hover-img" width="300" height="420" loading="lazy" decoding="async">
               <div class="collection-card-overlay">
                 <span class="collection-card-count">Explore Collection</span>
                 <h3 class="collection-card-title">Gents Wear</h3>
@@ -579,7 +581,7 @@
                 <!-- Product 1 -->
                 <div class="product-card" data-product-id="prod-na-1" data-name="Charulata Kasavu Weave Saree" data-category="Sarees / Fine Kerala Handloom Cotton Silk" data-price="₹8,500" data-img="assets/images/product-01.webp" data-badge="Signature Kasavu" data-desc="Contemporary Kerala Kasavu handloom saree crafted in fine off-white tissue with vibrant neon green pleat accents and rich gold zari border. Paired with a tailored custom puffed sleeve blouse.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-01.webp" alt="Charulata Kasavu Weave Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-01.webp" alt="Charulata Kasavu Weave Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Signature Kasavu</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-1', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -608,7 +610,7 @@
                 <!-- Product 2 -->
                 <div class="product-card" data-product-id="prod-na-2" data-name="Aadya Handloom Rust Silk Saree" data-category="Sarees / Pure Mulberry Raw Silk with Scalloped Zari Trim" data-price="₹14,500" data-img="assets/images/product-02.webp" data-badge="Boutique Exclusive" data-desc="Radiant rust orange pure handloom silk saree featuring delicate gold butta motifs and an intricately scalloped metallic zari border. Styled with a tailored sweet-heart neckline blouse.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-02.webp" alt="Aadya Handloom Rust Silk Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-02.webp" alt="Aadya Handloom Rust Silk Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Boutique Exclusive</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-2', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -637,7 +639,7 @@
                 <!-- Product 3 -->
                 <div class="product-card" data-product-id="prod-na-3" data-name="Nila Ivory Chevron Zari Lehenga Set" data-category="Lehengas / Pure Organza" data-price="₹36,000" data-img="assets/images/product-15.webp" data-badge="Bridal Festive" data-desc="Exquisite ivory and gold lehenga set featuring a multi-panel flared skirt adorned with shimmering chevron gold zari work, paired with a matching embroidered choli and sheer dupatta.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-15.webp" alt="Nila Ivory Chevron Zari Lehenga Set" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-15.webp" alt="Nila Ivory Chevron Zari Lehenga Set" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Bridal Festive</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-3', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -666,7 +668,7 @@
                 <!-- Product 4 -->
                 <div class="product-card" data-product-id="prod-na-4" data-name="Seraphina Blush Pink Mermaid Bridal Gown" data-category="Custom Dresses / Fine French Tulle, Silk Crepe" data-price="₹42,000" data-img="assets/images/product-23.webp" data-badge="Reception Couture" data-desc="Custom bridal reception mermaid gown in soft powder blush pink, featuring sheer embellished full sleeves, delicate sequin branch embroidery across the bodice, and a flared tulle godet skirt.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-23.webp" alt="Seraphina Blush Pink Mermaid Bridal Gown" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-23.webp" alt="Seraphina Blush Pink Mermaid Bridal Gown" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Reception Couture</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-4', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -695,7 +697,7 @@
                 <!-- Product 5 -->
                 <div class="product-card" data-product-id="prod-na-5" data-name="Gayatri Floral Organza Festive Coord Set" data-category="Ready-mades / Printed Organza" data-price="₹8,500" data-img="assets/images/product-28.webp" data-badge="Trending Coord" data-desc="Chic 2-piece ready-to-wear festive coord set featuring an asymmetrical floral organza tunic with lace trims, paired with cigarette trousers in coordinating raw silk.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-28.webp" alt="Gayatri Floral Organza Festive Coord Set" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-28.webp" alt="Gayatri Floral Organza Festive Coord Set" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Trending Coord</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-5', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -724,7 +726,7 @@
                 <!-- Product 6 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-na-6" data-name="Chinnu Heritage Kasavu Pattu Pavadai" data-category="Kids Wear / Traditional Kasavu Handloom" data-price="₹4,800" data-img="assets/images/product-30.webp" data-badge="Kids Festive" data-desc="Charming traditional Kerala Kasavu pattu pavadai set for young girls, featuring an off-white gold zari skirt paired with a peacock-green embroidered raw silk choli with puff sleeves.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-30.webp" alt="Chinnu Heritage Kasavu Pattu Pavadai" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-30.webp" alt="Chinnu Heritage Kasavu Pattu Pavadai" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Kids Festive</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-6', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -753,7 +755,7 @@
                 <!-- Product 7 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-na-7" data-name="Madhav Off-White Raw Silk Kurta Set" data-category="Gents Wear / Pure Mulberry Raw Silk with Gold Butta Weave" data-price="₹6,800" data-img="assets/images/product-32.webp" data-badge="Groomswear" data-desc="Groom's off-white raw silk kurta featuring subtle gold butta weaving and a mandarin collar, paired with tailored silk churidar or Kerala handloom Kasavu mundu. Coordinates with bridal drapes.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-32.webp" alt="Madhav Off-White Raw Silk Kurta Set" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-32.webp" alt="Madhav Off-White Raw Silk Kurta Set" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Groomswear</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-7', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -782,7 +784,7 @@
                 <!-- Product 8 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-na-8" data-name="Meera Pastel Lilac Organza Saree" data-category="Sarees / Sheer Silk Organza with Pearl" data-price="₹15,200" data-img="assets/images/product-06.webp" data-badge="Pastel Edit" data-desc="Ethereal pastel lilac organza saree featuring delicate hand-embroidered pearl scallops, resham floral bootis, and a subtle metallic silver-gold zari border. Designed for modern daytime weddings and engagements.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-06.webp" alt="Meera Pastel Lilac Organza Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-06.webp" alt="Meera Pastel Lilac Organza Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Pastel Edit</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-8', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -811,7 +813,7 @@
                 <!-- Product 9 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-na-9" data-name="Evangeline Schiffli Embroidered Sundress" data-category="Custom Dresses / Pure Cotton Schiffli Cutwork" data-price="₹13,500" data-img="assets/images/product-25.webp" data-badge="Artisanal Cotton" data-desc="Bespoke ivory cotton schiffli cutwork dress with delicate pastel floral embroidery motifs, V-neckline, and an inserted lace band along the flared skirt. Perfect for daytime celebrations and summer soirees.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-25.webp" alt="Evangeline Schiffli Embroidered Sundress" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-25.webp" alt="Evangeline Schiffli Embroidered Sundress" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Artisanal Cotton</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-na-9', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -847,7 +849,7 @@
                 <!-- Product 1 -->
                 <div class="product-card" data-product-id="prod-bs-1" data-name="Samvrutha Crimson Bridal Kanchipuram" data-category="Bridal Sarees / Pure Mulberry Kanchipuram Silk" data-price="₹58,000" data-img="assets/images/product-09.webp" data-badge="Muhurtham Heirloom" data-desc="Heritage crimson bridal Kanchipuram silk saree with rich gold temple korvai zari and peacock motifs. Designed for the traditional South Indian bride seeking regal grandeur on her wedding day.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-09.webp" alt="Samvrutha Crimson Bridal Kanchipuram" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-09.webp" alt="Samvrutha Crimson Bridal Kanchipuram" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Muhurtham Heirloom</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-1', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -876,7 +878,7 @@
                 <!-- Product 2 -->
                 <div class="product-card" data-product-id="prod-bs-2" data-name="Swarnamukhi Antique Gold Muhurtham Silk" data-category="Bridal Sarees / Antique Gold Tissue Silk" data-price="₹64,500" data-img="assets/images/product-10.webp" data-badge="Bridal Masterpiece" data-desc="Royal antique gold tissue Kanchipuram bridal saree with dense floral brocade all over the body, finished with a scarlet red border selvedge. Worn by distinguished brides for the sacred Muhurtham ceremony.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-10.webp" alt="Swarnamukhi Antique Gold Muhurtham Silk" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-10.webp" alt="Swarnamukhi Antique Gold Muhurtham Silk" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Bridal Masterpiece</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-2', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -905,7 +907,7 @@
                 <!-- Product 3 -->
                 <div class="product-card" data-product-id="prod-bs-3" data-name="Aparna Royal Violet Kanchipuram Silk" data-category="Bridal Sarees / Pure Kanchipuram Silk with Antique Gold Zari" data-price="₹46,000" data-img="assets/images/product-11.webp" data-badge="Celebrity Pick" data-desc="Regal royal violet pure Kanchipuram silk saree with dense antique gold floral buttas and wide brocade borders. As worn by designer Aiswarya Baiju at the Mayookha studio showcase.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-11.webp" alt="Aparna Royal Violet Kanchipuram Silk" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-11.webp" alt="Aparna Royal Violet Kanchipuram Silk" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Celebrity Pick</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-3', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -934,7 +936,7 @@
                 <!-- Product 4 -->
                 <div class="product-card" data-product-id="prod-bs-4" data-name="Haritha Emerald & Kasavu Dhavani Set" data-category="Lehengas / Handloom Kerala Kasavu" data-price="₹28,500" data-img="assets/images/product-16.webp" data-badge="Heritage Dhavani" data-desc="Traditional Kerala dhavani (half-saree) featuring a pristine off-white pleated skirt with rich emerald-gold zari border, an emerald green embroidered blouse with puffed sleeves, and a matching dhavani.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-16.webp" alt="Haritha Emerald & Kasavu Dhavani Set" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-16.webp" alt="Haritha Emerald & Kasavu Dhavani Set" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Heritage Dhavani</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-4', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -963,7 +965,7 @@
                 <!-- Product 5 -->
                 <div class="product-card" data-product-id="prod-bs-5" data-name="Aiswarya Signature Zardozi Bridal Blouse" data-category="Bridal Blouses / Pure Raw Silk with Gold Brocade Back Panel" data-price="₹14,500" data-img="assets/images/product-19.webp" data-badge="Designer Special" data-desc="Masterpiece rani pink bridal blouse featuring dense gold floral brocade on the back, delicate fabric-covered button rows, and custom zardozi embroidery along the elbow-length sleeve borders.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-19.webp" alt="Aiswarya Signature Zardozi Bridal Blouse" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-19.webp" alt="Aiswarya Signature Zardozi Bridal Blouse" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Designer Special</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-5', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -992,8 +994,8 @@
                 <!-- Product 6 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-bs-6" data-name="Padmapriya Temple Maggam Work Blouse" data-category="Bridal Blouses / Pure Raw Silk with Dense Maggam Handwork" data-price="₹16,800" data-img="assets/images/product-20.webp" data-badge="Artisanal Craft" data-desc="Grand bridal blouse in vermilion red silk adorned with heavy antique gold maggam work, featuring temple peacocks, kundan stones, genuine seed pearls, and intricate cutwork sleeve cuffs.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-20.webp" alt="Padmapriya Temple Maggam Work Blouse" class="product-img" width="295" height="380" loading="lazy">
-                    <span class="product-badge">Artisanal Craft</span>
+                    <img src="assets/images/product-20.webp" alt="Padmapriya Temple Maggam Work Blouse" class="product-img" width="295" height="380" loading="lazy" decoding="async">
+                    <span class="product-badge">Master Craft</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-6', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                     </button>
@@ -1009,7 +1011,7 @@
                     <h3 class="product-title">Padmapriya Temple Maggam Work Blouse</h3>
                     <div class="product-pricing">
                       <span class="product-price">₹16,800</span>
-                      <span class="product-badge-tag">Artisanal Craft</span>
+                      <span class="product-badge-tag">Master Craft</span>
                     </div>
                     <a href="https://wa.me/918089101784?text=Hello%20Mayookha%2C%20I%20am%20enquiring%20about%20the%20Padmapriya%20Temple%20Maggam%20Work%20Blouse%20%28%E2%82%B916%2C800%29.%20Please%20share%20details." target="_blank" rel="noopener" class="btn-product-enquire">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
@@ -1021,7 +1023,7 @@
                 <!-- Product 7 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-bs-7" data-name="Souparnika Emerald Green Heritage Saree" data-category="Sarees / Pure Handloom Silk Cotton with High-Zari Border" data-price="₹16,500" data-img="assets/images/product-05.webp" data-badge="Best Seller" data-desc="Deep bottle green pure handloom saree patterned with floral gold buttas and rich woven zari pallu. Perfectly embodies the regal elegance of Kerala traditional celebrations.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-05.webp" alt="Souparnika Emerald Green Heritage Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-05.webp" alt="Souparnika Emerald Green Heritage Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Best Seller</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-7', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1050,7 +1052,7 @@
                 <!-- Product 8 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-bs-8" data-name="Samyuktha Rani Pink Bridal Silk" data-category="Bridal Sarees / Pure Mulberry Silk with Micro-Check Texture" data-price="₹48,500" data-img="assets/images/product-13.webp" data-badge="Festive Bridal" data-desc="Vibrant rani fuchsia pink bridal silk saree with delicate micro-checks, gold zari border bands, and a lavish woven pallu. Designed for engagement, madhuramveppu, and reception ceremonies.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-13.webp" alt="Samyuktha Rani Pink Bridal Silk" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-13.webp" alt="Samyuktha Rani Pink Bridal Silk" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Festive Bridal</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-8', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1079,7 +1081,7 @@
                 <!-- Product 9 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-bs-9" data-name="Kalyani Black Temple Border Saree" data-category="Sarees / Fine Cotton Silk with Crimson Handloom Temple Korvai" data-price="₹12,800" data-img="assets/images/product-03.webp" data-badge="Heritage Drape" data-desc="Striking jet-black handloom weave saree framed with auspicious crimson red temple borders and delicate antique gold zari korvai motifs. A tribute to timeless South Indian weaving artistry.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-03.webp" alt="Kalyani Black Temple Border Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-03.webp" alt="Kalyani Black Temple Border Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Heritage Drape</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-bs-9', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1115,7 +1117,7 @@
                 <!-- Product 1 -->
                 <div class="product-card" data-product-id="prod-ft-1" data-name="Veda Painted Tussar Organza Saree" data-category="Sarees / Pure Tussar Silk Organza" data-price="₹19,500" data-img="assets/images/product-04.webp" data-badge="Atelier Statement" data-desc="Ivory tussar organza saree adorned with dramatic hand-painted floral art in bold charcoal black and burnt orange, completed with an opulent antique gold brocade border. As featured on the studio display.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-04.webp" alt="Veda Painted Tussar Organza Saree" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-04.webp" alt="Veda Painted Tussar Organza Saree" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Atelier Statement</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-1', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1144,7 +1146,7 @@
                 <!-- Product 2 -->
                 <div class="product-card" data-product-id="prod-ft-2" data-name="Vaishnavi Ivory & Gold Bridal Kasavu Drape" data-category="Bridal Sarees / Pure Handloom Silk Kasavu" data-price="₹34,000" data-img="assets/images/product-14.webp" data-badge="Kerala Bridal" data-desc="Grand Kerala bridal set saree crafted in pristine off-white handloom silk with wide high-karat gold Kasavu zari borders and temple motifs. The quintessential Kerala bridal ensemble.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-14.webp" alt="Vaishnavi Ivory & Gold Bridal Kasavu Drape" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-14.webp" alt="Vaishnavi Ivory & Gold Bridal Kasavu Drape" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Kerala Bridal</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-2', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1173,7 +1175,7 @@
                 <!-- Product 3 -->
                 <div class="product-card" data-product-id="prod-ft-3" data-name="Ragini Rani Pink Brocade Dhavani Ensemble" data-category="Lehengas / Pure Brocade Silk" data-price="₹32,000" data-img="assets/images/product-17.webp" data-badge="Studio Signature" data-desc="Vibrant rani pink pleated dhavani skirt paired with a high-neck gold floral brocade blouse featuring detailed back buttoning, and a draped rani pink chiffon dupatta with gold border.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-17.webp" alt="Ragini Rani Pink Brocade Dhavani Ensemble" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-17.webp" alt="Ragini Rani Pink Brocade Dhavani Ensemble" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Studio Signature</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-3', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1202,7 +1204,7 @@
                 <!-- Product 4 -->
                 <div class="product-card" data-product-id="prod-ft-4" data-name="Manjari Royal Indigo Festive Lehenga" data-category="Lehengas / Pure Chanderi Silk" data-price="₹38,000" data-img="assets/images/product-18.webp" data-badge="Occasion Edit" data-desc="Deep royal indigo-purple flared lehenga skirt framed with wide antique gold temple borders, paired with a fitted boat-neck blouse and matching purple organza drape.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-18.webp" alt="Manjari Royal Indigo Festive Lehenga" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-18.webp" alt="Manjari Royal Indigo Festive Lehenga" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Occasion Edit</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-4', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1231,7 +1233,7 @@
                 <!-- Product 5 -->
                 <div class="product-card" data-product-id="prod-ft-5" data-name="Vanathi Emerald Brocade Puff Blouse" data-category="Bridal Blouses / Pure Benarasi Silk Brocade" data-price="₹9,800" data-img="assets/images/product-21.webp" data-badge="Heritage Cut" data-desc="Traditional emerald green brocade blouse featuring vintage puffed sleeves with broad gold zari cuffs, sweet-heart neckline, and subtle zardozi highlight work along the borders.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-21.webp" alt="Vanathi Emerald Brocade Puff Blouse" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-21.webp" alt="Vanathi Emerald Brocade Puff Blouse" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Heritage Cut</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-5', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1260,7 +1262,7 @@
                 <!-- Product 6 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-ft-6" data-name="Surabhi Golden Beige Cutwork Blouse" data-category="Bridal Blouses / Metallic Tissue Silk" data-price="₹11,500" data-img="assets/images/product-22.webp" data-badge="Bespoke Finish" data-desc="Sleek golden beige tissue silk blouse with a tailored back cutout, tie-up latkans, sleeveless cut, and delicate metallic cord embroidery along the neckline. Ideal for cocktail sarees and modern drapes.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-22.webp" alt="Surabhi Golden Beige Cutwork Blouse" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-22.webp" alt="Surabhi Golden Beige Cutwork Blouse" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Bespoke Finish</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-6', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1289,7 +1291,7 @@
                 <!-- Product 7 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-ft-7" data-name="Nocturne Off-Shoulder Couture Evening Dress" data-category="Custom Dresses / Heavy Raw Silk" data-price="₹24,500" data-img="assets/images/product-24.webp" data-badge="Celebrity Styling" data-desc="Dramatic black silk off-shoulder custom gown with architectural fold-over neckline, structured bodice, and a fluid flared A-line skirt. Designed for red-carpet gala appearances and cocktail evenings.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-24.webp" alt="Nocturne Off-Shoulder Couture Evening Dress" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-24.webp" alt="Nocturne Off-Shoulder Couture Evening Dress" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Celebrity Styling</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-7', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1318,7 +1320,7 @@
                 <!-- Product 8 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-ft-8" data-name="Aravind Black Shirt & Kasavu Mundu Set" data-category="Gents Wear / Premium Cotton-Linen Shirt" data-price="₹5,400" data-img="assets/images/product-33.webp" data-badge="Signature Pair" data-desc="Modern Kerala groom's celebration look featuring a tailored jet-black cotton-linen shirt paired with a pure handloom Kerala Kasavu double mundu featuring silver-black zari borders.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-33.webp" alt="Aravind Black Shirt & Kasavu Mundu Set" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-33.webp" alt="Aravind Black Shirt & Kasavu Mundu Set" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Signature Pair</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-8', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1347,7 +1349,7 @@
                 <!-- Product 9 -->
                 <div class="product-card reveal-on-scroll" data-product-id="prod-ft-9" data-name="Keshav Golden Kasavu Wedding Mundu & Kurta" data-category="Gents Wear / High-Karat Gold Kasavu Handloom" data-price="₹7,500" data-img="assets/images/product-34.webp" data-badge="Wedding Classic" data-desc="Traditional Kerala wedding attire set comprising an opulent 3-inch pure gold Kasavu double mundu and matching kasavu melmundu, paired with a tailored cream tussar silk kurta.">
                   <div class="product-img-wrap">
-                    <img src="assets/images/product-34.webp" alt="Keshav Golden Kasavu Wedding Mundu & Kurta" class="product-img" width="295" height="380" loading="lazy">
+                    <img src="assets/images/product-34.webp" alt="Keshav Golden Kasavu Wedding Mundu & Kurta" class="product-img" width="295" height="380" loading="lazy" decoding="async">
                     <span class="product-badge">Wedding Classic</span>
                     <button class="product-wishlist-btn" aria-label="Save to Wishlist" onclick="toggleWishlist('prod-ft-9', this)">
                       <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -1411,7 +1413,7 @@
           
           <!-- Card 1: Our Community (Left Tall) -->
           <div class="mosaic-card mosaic-tall mosaic-left reveal-on-scroll">
-            <img src="assets/images/story-01.webp" alt="Our Community - Handcrafted Artisan Showcase" class="mosaic-img" width="400" height="580" loading="lazy">
+            <img src="assets/images/story-01.webp" alt="Our Community - Handcrafted Artisan Showcase" class="mosaic-img" width="400" height="580" loading="lazy" decoding="async">
             <div class="mosaic-overlay">
               <span class="mosaic-caption">Our Community</span>
             </div>
@@ -1421,7 +1423,7 @@
           <div class="mosaic-stack-col">
             <!-- Card 2: Happiness (Middle Top) -->
             <div class="mosaic-card mosaic-stacked mosaic-top reveal-on-scroll">
-              <img src="assets/images/story-02.webp" alt="Happiness - Joyful Pre-Wedding Moments" class="mosaic-img" width="400" height="280" loading="lazy">
+              <img src="assets/images/story-02.webp" alt="Happiness - Joyful Pre-Wedding Moments" class="mosaic-img" width="400" height="280" loading="lazy" decoding="async">
               <div class="mosaic-overlay">
                 <span class="mosaic-caption">Happiness</span>
               </div>
@@ -1429,7 +1431,7 @@
 
             <!-- Card 3: Handcrafted (Middle Bottom) -->
             <div class="mosaic-card mosaic-stacked mosaic-bottom reveal-on-scroll">
-              <img src="assets/images/collection-05.webp" alt="Handcrafted - Heritage Handloom Weaves" class="mosaic-img" width="400" height="280" loading="lazy">
+              <img src="assets/images/collection-05.webp" alt="Handcrafted - Heritage Handloom Weaves" class="mosaic-img" width="400" height="280" loading="lazy" decoding="async">
               <div class="mosaic-overlay">
                 <span class="mosaic-caption">Handcrafted</span>
               </div>
@@ -1438,7 +1440,7 @@
 
           <!-- Card 4: Timeless Style (Right Tall) -->
           <div class="mosaic-card mosaic-tall mosaic-right reveal-on-scroll">
-            <img src="assets/images/collection-06.webp" alt="Timeless Elegance - Crimson Signature Ensemble" class="mosaic-img" width="400" height="580" loading="lazy">
+            <img src="assets/images/collection-06.webp" alt="Timeless Elegance - Crimson Signature Ensemble" class="mosaic-img" width="400" height="580" loading="lazy" decoding="async">
             <div class="mosaic-overlay">
               <span class="mosaic-caption">Timeless Style</span>
             </div>
@@ -1468,7 +1470,7 @@
             <!-- Card 1: Saffron Draped Silhouette 02 -->
             <div class="celebration-card reveal-on-scroll" data-index="0" data-full="assets/images/product-01.webp" data-caption="Ananya Saffron Draped Silhouette &mdash; Editorial Showcase" tabindex="0" role="button" aria-label="View photo: Ananya Saffron Draped Silhouette">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-01.webp" alt="Ananya Saffron Draped Silhouette" class="celebration-img" width="320" height="400" loading="eager">
+                <img src="assets/images/product-01.webp" alt="Ananya Saffron Draped Silhouette" class="celebration-img" width="320" height="400" loading="eager" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1481,7 +1483,7 @@
             <!-- Card 2: Engagement 05 -->
             <div class="celebration-card reveal-on-scroll" data-index="1" data-full="assets/images/product-10.webp" data-caption="Ivory Silk Handcrafted Ensemble &mdash; Gala Evening" tabindex="0" role="button" aria-label="View photo: Ivory Silk Handcrafted Ensemble">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-10.webp" alt="Ivory Silk Handcrafted Ensemble" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-10.webp" alt="Ivory Silk Handcrafted Ensemble" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1494,7 +1496,7 @@
             <!-- Card 3: Evening Drape 03 -->
             <div class="celebration-card reveal-on-scroll" data-index="2" data-full="assets/images/product-05.webp" data-caption="Celeste Hand-Embroidered Evening Drape &mdash; Formal Gala" tabindex="0" role="button" aria-label="View photo: Celeste Hand-Embroidered Evening Drape">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-05.webp" alt="Celeste Hand-Embroidered Evening Drape" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-05.webp" alt="Celeste Hand-Embroidered Evening Drape" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1507,7 +1509,7 @@
             <!-- Card 4: Engagement 03 -->
             <div class="celebration-card reveal-on-scroll" data-index="3" data-full="assets/images/product-08.webp" data-caption="Samira Fuchsia Flared Ensemble &mdash; Festive Soiree" tabindex="0" role="button" aria-label="View photo: Samira Fuchsia Flared Ensemble">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-08.webp" alt="Samira Fuchsia Flared Ensemble" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-08.webp" alt="Samira Fuchsia Flared Ensemble" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1520,7 +1522,7 @@
             <!-- Card 5: White Gown 02 -->
             <div class="celebration-card reveal-on-scroll" data-index="4" data-full="assets/images/product-11.webp" data-caption="Giselle Beaded Cape Gown &mdash; Evening Showcase" tabindex="0" role="button" aria-label="View photo: Giselle Beaded Cape Gown">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-11.webp" alt="Giselle Beaded Cape Gown" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-11.webp" alt="Giselle Beaded Cape Gown" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1533,7 +1535,7 @@
             <!-- Card 6: Heritage Silk 02 -->
             <div class="celebration-card reveal-on-scroll" data-index="5" data-full="assets/images/product-13.webp" data-caption="Vrinda Emerald &amp; Maroon Woven Drape &mdash; Festive Gathering" tabindex="0" role="button" aria-label="View photo: Vrinda Emerald & Maroon Woven Drape">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-13.webp" alt="Vrinda Emerald & Maroon Woven Drape" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-13.webp" alt="Vrinda Emerald & Maroon Woven Drape" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1546,7 +1548,7 @@
             <!-- Card 7: Engagement 04 -->
             <div class="celebration-card reveal-on-scroll" data-index="6" data-full="assets/images/product-09.webp" data-caption="Althea Emerald Velvet Tailored Ensemble &mdash; Evening Reception" tabindex="0" role="button" aria-label="View photo: Althea Emerald Velvet Tailored Ensemble">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-09.webp" alt="Althea Emerald Velvet Tailored Ensemble" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-09.webp" alt="Althea Emerald Velvet Tailored Ensemble" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1559,7 +1561,7 @@
             <!-- Card 8: Dual-Tone Silk 02 -->
             <div class="celebration-card reveal-on-scroll" data-index="7" data-full="assets/images/product-14.webp" data-caption="Charulata Chartreuse &amp; Plum Woven Drape &mdash; Cultural Showcase" tabindex="0" role="button" aria-label="View photo: Charulata Chartreuse & Plum Woven Drape">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-14.webp" alt="Charulata Chartreuse & Plum Woven Drape" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-14.webp" alt="Charulata Chartreuse & Plum Woven Drape" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1572,7 +1574,7 @@
             <!-- Card 9: White Gown 03 -->
             <div class="celebration-card reveal-on-scroll" data-index="8" data-full="assets/images/product-12.webp" data-caption="Rosalind Pearl Tassel Champagne Gown &mdash; Cocktail Evening" tabindex="0" role="button" aria-label="View photo: Rosalind Pearl Tassel Champagne Gown">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-12.webp" alt="Rosalind Pearl Tassel Champagne Gown" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-12.webp" alt="Rosalind Pearl Tassel Champagne Gown" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1585,7 +1587,7 @@
             <!-- Card 10: Heritage Silk 03 -->
             <div class="celebration-card reveal-on-scroll" data-index="9" data-full="assets/images/product-02.webp" data-caption="Mayura Tangerine Heritage Silk Drape &mdash; Ceremonial Showcase" tabindex="0" role="button" aria-label="View photo: Mayura Tangerine Heritage Silk Drape">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-02.webp" alt="Mayura Tangerine Heritage Silk Drape" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-02.webp" alt="Mayura Tangerine Heritage Silk Drape" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1598,7 +1600,7 @@
             <!-- Card 11: Tissue Drape 04 -->
             <div class="celebration-card reveal-on-scroll" data-index="10" data-full="assets/images/product-06.webp" data-caption="Evangeline Antique Gold Tissue Drape &mdash; Special Occasion" tabindex="0" role="button" aria-label="View photo: Evangeline Antique Gold Tissue Drape">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-06.webp" alt="Evangeline Antique Gold Tissue Drape" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-06.webp" alt="Evangeline Antique Gold Tissue Drape" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1611,7 +1613,7 @@
             <!-- Card 12: Engagement 02 -->
             <div class="celebration-card reveal-on-scroll" data-index="11" data-full="assets/images/product-07.webp" data-caption="Aurelia Floral Organza Flared Ensemble &mdash; Sunlit Occasion" tabindex="0" role="button" aria-label="View photo: Aurelia Floral Organza Flared Ensemble">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-07.webp" alt="Aurelia Floral Organza Flared Ensemble" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-07.webp" alt="Aurelia Floral Organza Flared Ensemble" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1624,7 +1626,7 @@
             <!-- Card 13: Gold Silk 04 -->
             <div class="celebration-card reveal-on-scroll" data-index="12" data-full="assets/images/product-03.webp" data-caption="Kalyani Temple Gold Silk Ensemble &mdash; Festive Elegance" tabindex="0" role="button" aria-label="View photo: Kalyani Temple Gold Silk Ensemble">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-03.webp" alt="Kalyani Woven Gold Silk Ensemble" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-03.webp" alt="Kalyani Woven Gold Silk Ensemble" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1637,7 +1639,7 @@
             <!-- Card 14: Handwork 03 -->
             <div class="celebration-card reveal-on-scroll" data-index="13" data-full="assets/images/product-16.webp" data-caption="Atelier Handcrafted Zardozi Artistry &mdash; Bespoke Craft Detail" tabindex="0" role="button" aria-label="View photo: Atelier Handcrafted Zardozi Artistry">
               <div class="celebration-card-inner">
-                <img src="assets/images/product-16.webp" alt="Atelier Handcrafted Zardozi Artistry" class="celebration-img" width="320" height="400" loading="lazy">
+                <img src="assets/images/product-16.webp" alt="Atelier Handcrafted Zardozi Artistry" class="celebration-img" width="320" height="400" loading="lazy" decoding="async">
                 <div class="celebration-overlay">
                   <span class="celebration-zoom-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -1676,7 +1678,7 @@
         </button>
         <div class="lightbox-body">
           <div class="lightbox-img-wrap">
-            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg" decoding="async">
           </div>
           <div class="lightbox-caption-bar">
             <p class="lightbox-caption" id="lightboxCaption"></p>
@@ -1697,11 +1699,11 @@
           <div class="tilted-stack-wrapper">
             <!-- Back Photo: Tilted Left -->
             <div class="tilted-card tilted-card-back">
-              <img src="assets/images/product-24.webp" alt="Signature Series - Royal Crimson Ensemble" class="tilted-img" width="340" height="440" loading="lazy">
+              <img src="assets/images/product-24.webp" alt="Signature Bridal Edit - Royal Crimson Ensemble" class="tilted-img" width="340" height="440" loading="lazy" decoding="async">
             </div>
             <!-- Front Photo: Tilted Right -->
             <div class="tilted-card tilted-card-front">
-              <img src="assets/images/hero-02.webp" alt="Signature Series - Antique Gold Embellished Ensemble" class="tilted-img" width="340" height="440" loading="lazy">
+              <img src="assets/images/hero-02.webp" alt="Signature Bridal Edit - Antique Gold Embellished Ensemble" class="tilted-img" width="340" height="440" loading="lazy" decoding="async">
               <div class="tilted-card-badge">New Launch</div>
             </div>
           </div>
@@ -1711,9 +1713,9 @@
         <div class="new-launch-content">
           <span class="section-eyebrow">Exclusive Release</span>
           <h2 class="new-launch-title">New Launch Alert</h2>
-          <p class="new-launch-tagline">The Signature Series &mdash; Where ancestral craftsmanship meets contemporary elegance.</p>
+          <p class="new-launch-tagline">The Bridal Signature Edit &mdash; Where ancestral craftsmanship meets contemporary elegance.</p>
           <p class="new-launch-desc">
-            Our most anticipated capsule is here. The Signature Series showcases rich handloom textiles, imperial crimson tones, and masterfully embroidered antique metallic motifs. Each creation is bespoke tailored to articulate your personal story.
+            Our most anticipated capsule is here. The Signature Bridal Edit showcases rich handloom textiles, imperial crimson tones, and masterfully embroidered antique metallic motifs. Each creation is bespoke tailored to articulate your personal story.
           </p>
           <div class="new-launch-actions">
             <a href="collections.html?c=signature-series" class="btn-launch-primary">
@@ -1750,7 +1752,7 @@
               <!-- Reel Card 1 -->
               <div class="reel-card reveal-on-scroll" data-index="0" data-video="assets/reels/reel-01.mp4" data-title="Samvrutha Crimson Bridal Kanchipuram" data-price="₹58,000" data-category="Bridal Sarees" tabindex="0" role="button" aria-label="Play reel: Aurelia Royal Zari Ensemble">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-01.webp" alt="Samvrutha Crimson Bridal Kanchipuram" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-01.webp" alt="Samvrutha Crimson Bridal Kanchipuram" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-01.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1765,7 +1767,7 @@
               <!-- Reel Card 2 -->
               <div class="reel-card reveal-on-scroll" data-index="1" data-video="assets/reels/reel-02.mp4" data-title="Seraphina Blush Pink Mermaid Bridal Gown" data-price="₹42,000" data-category="Custom Dresses" tabindex="0" role="button" aria-label="Play reel: Celeste Scalloped Cathedral Gown">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-02.webp" alt="Seraphina Blush Pink Mermaid Bridal Gown" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-02.webp" alt="Seraphina Blush Pink Mermaid Bridal Gown" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-02.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1780,7 +1782,7 @@
               <!-- Reel Card 3 -->
               <div class="reel-card reveal-on-scroll" data-index="2" data-video="assets/reels/reel-03.mp4" data-title="Charulata Kasavu Weave Saree" data-price="₹8,500" data-category="Sarees" tabindex="0" role="button" aria-label="Play reel: Vrinda Handwoven Gold Drape">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-03.webp" alt="Charulata Kasavu Weave Saree" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-03.webp" alt="Charulata Kasavu Weave Saree" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-03.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1795,7 +1797,7 @@
               <!-- Reel Card 4 -->
               <div class="reel-card reveal-on-scroll" data-index="3" data-video="assets/reels/reel-04.mp4" data-title="Aiswarya Signature Zardozi Bridal Blouse" data-price="₹14,500" data-category="Bridal Blouses" tabindex="0" role="button" aria-label="Play reel: Samira Fuchsia Zardozi Flared Set">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-04.webp" alt="Aiswarya Signature Zardozi Bridal Blouse" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-04.webp" alt="Aiswarya Signature Zardozi Bridal Blouse" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-04.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1810,7 +1812,7 @@
               <!-- Reel Card 5 -->
               <div class="reel-card reveal-on-scroll" data-index="4" data-video="assets/reels/reel-05.mp4" data-title="Charulata Imperial Crimson Drape" data-price="₹46,000" data-category="New Arrivals" tabindex="0" role="button" aria-label="Play reel: Charulata Imperial Crimson Drape">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-05.webp" alt="Nila Ivory Chevron Zari Lehenga Set" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-05.webp" alt="Nila Ivory Chevron Zari Lehenga Set" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-05.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1825,7 +1827,7 @@
               <!-- Reel Card 6 -->
               <div class="reel-card reveal-on-scroll" data-index="5" data-video="assets/reels/reel-06.mp4" data-title="Giselle Beaded Illusion Corset Gown" data-price="₹58,000" data-category="White Gown Atelier" tabindex="0" role="button" aria-label="Play reel: Giselle Beaded Illusion Corset Gown">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-06.webp" alt="Aadya Handloom Rust Silk Saree" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-06.webp" alt="Aadya Handloom Rust Silk Saree" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-06.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1840,7 +1842,7 @@
               <!-- Reel Card 7 -->
               <div class="reel-card reveal-on-scroll" data-index="6" data-video="assets/reels/reel-07.mp4" data-title="Atelier Gold Bullion Zardozi Blouse" data-price="₹32,500" data-category="Artisanal Handwork" tabindex="0" role="button" aria-label="Play reel: Atelier Gold Bullion Zardozi Blouse">
                 <div class="reel-card-media-wrap">
-                  <img src="assets/images/reel-poster-07.webp" alt="Aravind Black Shirt & Kasavu Mundu Set" class="reel-card-poster" width="280" height="498" loading="lazy">
+                  <img src="assets/images/reel-poster-07.webp" alt="Aravind Black Shirt & Kasavu Mundu Set" class="reel-card-poster" width="280" height="498" loading="lazy" decoding="async">
                   <video class="reel-card-video" loop muted playsinline preload="none" data-src="assets/reels/reel-07.mp4"></video>
                 </div>
                 <div class="reel-play-btn" aria-hidden="true">
@@ -1895,9 +1897,9 @@
           <!-- Card 1 (Photo 1) - eager load -->
           <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" class="insta-card" aria-label="View on Instagram">
             <div class="insta-img-wrap">
-              <img src="assets/images/social-01.webp" alt="MAYOOKHA Instagram story 1" loading="eager" width="360" height="450">
+              <img src="assets/images/social-01.webp" alt="MAYOOKHA Instagram story 1" loading="eager" width="360" height="450" decoding="async">
               <div class="insta-hover-glyph" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </div>
           </a>
@@ -1905,9 +1907,9 @@
           <!-- Card 2 (Real photo replacing "Aha!" logo artwork) - eager load -->
           <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" class="insta-card" aria-label="View on Instagram">
             <div class="insta-img-wrap">
-              <img src="assets/images/collection-03.webp" alt="MAYOOKHA client look" loading="eager" width="360" height="450">
+              <img src="assets/images/collection-03.webp" alt="MAYOOKHA client look" loading="eager" width="360" height="450" decoding="async">
               <div class="insta-hover-glyph" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </div>
           </a>
@@ -1915,9 +1917,9 @@
           <!-- Card 3 (Photo 3) - eager load -->
           <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" class="insta-card" aria-label="View on Instagram">
             <div class="insta-img-wrap">
-              <img src="assets/images/social-02.webp" alt="MAYOOKHA Instagram story 2" loading="eager" width="360" height="450">
+              <img src="assets/images/social-02.webp" alt="MAYOOKHA Instagram story 2" loading="eager" width="360" height="450" decoding="async">
               <div class="insta-hover-glyph" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </div>
           </a>
@@ -1925,9 +1927,9 @@
           <!-- Card 4 (Featured 1) -->
           <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" class="insta-card" aria-label="View on Instagram">
             <div class="insta-img-wrap">
-              <img src="assets/images/product-23.webp" alt="MAYOOKHA studio look" loading="lazy" width="360" height="450">
+              <img src="assets/images/product-23.webp" alt="MAYOOKHA studio look" loading="lazy" width="360" height="450" decoding="async">
               <div class="insta-hover-glyph" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </div>
           </a>
@@ -1935,9 +1937,9 @@
           <!-- Card 5 -->
           <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" class="insta-card" aria-label="View on Instagram">
             <div class="insta-img-wrap">
-              <img src="assets/images/product-24.webp" alt="MAYOOKHA featured look 2" loading="lazy" width="360" height="450">
+              <img src="assets/images/product-24.webp" alt="MAYOOKHA featured look 2" loading="lazy" width="360" height="450" decoding="async">
               <div class="insta-hover-glyph" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </div>
           </a>
@@ -2090,7 +2092,7 @@
       <button class="quickview-close-btn" id="qvCloseBtn" aria-label="Close Quick View">&times;</button>
       <div class="quickview-grid">
         <div class="quickview-img-wrap">
-          <img id="qvImg" src="assets/images/product-28.webp" alt="Designer Couture Piece" width="400" height="520">
+          <img id="qvImg" src="assets/images/product-28.webp" alt="Designer Couture Piece" width="400" height="520" decoding="async">
           <button class="product-wishlist-btn" id="qvWishlistBtn" aria-label="Save to Wishlist">
             <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </button>
@@ -2129,7 +2131,7 @@
       </div>
       <div class="reel-modal-info">
         <div class="reel-modal-info-text">
-          <span class="reel-card-category" id="reelModalCategory">Artisanal Craft</span>
+          <span class="reel-card-category" id="reelModalCategory">Master Craft</span>
           <h3 class="reel-modal-title" id="reelModalTitle">Aurelia Royal Zari Ensemble</h3>
           <span class="reel-modal-price" id="reelModalPrice">₹48,500</span>
         </div>
@@ -2149,36 +2151,32 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand-wrap">
-            <img src="assets/images/logo-badge.png" alt="MAYOOKHA Emblem" class="footer-logo-badge" width="56" height="56" loading="lazy">
-            <div>
-              <div class="footer-brand">MAYOOKHA</div>
-              <div class="footer-tagline">The Bridal Studio · Celebrity Costume Designer</div>
-            </div>
+            <img src="assets/images/logo-footer.png" alt="MAYOOKHA – The Bridal Studio" class="footer-logo-img" width="160" height="54" loading="lazy" decoding="async">
           </div>
           <p class="footer-desc">
             Cherthala’s premier bridal destination founded by Celebrity Costume Designer Aiswarya Baiju. Specializing in bespoke bridal sarees, Kanchipuram silks, lehengas, bridal blouses, and custom couture.
           </p>
           <div class="footer-social-links">
             <a href="https://www.instagram.com/mayoohka_by_aiswarya_/" target="_blank" rel="noopener" aria-label="Follow MAYOOKHA on Instagram" class="footer-social-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
             <a href="https://wa.me/918089101784" target="_blank" rel="noopener" aria-label="Message MAYOOKHA on WhatsApp" class="footer-social-icon">
-              <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m-3.53 3.63c-.19 0-.42.07-.63.3-.22.23-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.19-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.8-.2-.47-.39-.41-.54-.41z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m-3.53 3.63c-.19 0-.42.07-.63.3-.22.23-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.19-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.8-.2-.47-.39-.41-.54-.41z"/></svg>
             </a>
           </div>
         </div>
 
-        <div>
+                <div>
           <h3 class="footer-col-title">Collections</h3>
-          <ul class="footer-links">
-            <li><a href="collections.html?c=sarees">Sarees</a></li>
-            <li><a href="collections.html?c=bridal-sarees">Bridal Sarees</a></li>
-            <li><a href="collections.html?c=lehengas">Lehengas</a></li>
-            <li><a href="collections.html?c=bridal-blouses">Bridal Blouses</a></li>
-            <li><a href="collections.html?c=custom-dresses">Custom Dresses</a></li>
-            <li><a href="collections.html?c=ready-mades">Ready-mades</a></li>
-            <li><a href="collections.html?c=kids-wear">Kids Wear</a></li>
-            <li><a href="collections.html?c=gents-wear">Gents Wear</a></li>
+          <ul class="footer-links-list">
+            <li><a href="collections.html?c=sarees" class="footer-link">Sarees</a></li>
+            <li><a href="collections.html?c=bridal-sarees" class="footer-link">Bridal Sarees</a></li>
+            <li><a href="collections.html?c=lehengas" class="footer-link">Lehengas</a></li>
+            <li><a href="collections.html?c=bridal-blouses" class="footer-link">Bridal Blouses</a></li>
+            <li><a href="collections.html?c=custom-dresses" class="footer-link">Custom Dresses</a></li>
+            <li><a href="collections.html?c=ready-mades" class="footer-link">Ready-mades</a></li>
+            <li><a href="collections.html?c=kids-wear" class="footer-link">Kids Wear</a></li>
+            <li><a href="collections.html?c=gents-wear" class="footer-link">Gents Wear</a></li>
           </ul>
         </div>
 
@@ -2204,10 +2202,7 @@
             <strong>Phone:</strong><br>
             <a href="tel:+918089101784">+91 8089101784</a>
           </p>
-          <p class="footer-contact-item">
-            <strong>Email:</strong><br>
-            <a href="mailto:hello@mayoohka_by_aiswarya_.com">hello@mayoohka_by_aiswarya_.com</a>
-          </p>
+          
           <p class="footer-contact-item">
             <strong>WhatsApp:</strong><br>
             <a href="https://wa.me/918089101784" target="_blank" rel="noopener">+91 8089101784</a>
@@ -2240,6 +2235,6 @@
   </aside>
 
   <!-- Client Script -->
-  <script src="js/main.js?v=7.0"></script>
+  <script src="js/main.js?v=7.0" defer></script>
 </body>
 </html>

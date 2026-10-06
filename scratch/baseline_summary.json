@@ -1,0 +1,23 @@
+{
+  "index": {
+    "Performance": 56,
+    "LCP": "10.5\u00a0s",
+    "CLS": "0.006",
+    "TBT": "0\u00a0ms",
+    "PageWeight": "Total size was 2,069\u00a0KiB"
+  },
+  "collections": {
+    "Performance": 56,
+    "LCP": "5.5\u00a0s",
+    "CLS": "0.313",
+    "TBT": "0\u00a0ms",
+    "PageWeight": "Total size was 1,592\u00a0KiB"
+  },
+  "about": {
+    "Performance": 72,
+    "LCP": "4.3\u00a0s",
+    "CLS": "0",
+    "TBT": "0\u00a0ms",
+    "PageWeight": "Total size was 1,502\u00a0KiB"
+  }
+}
